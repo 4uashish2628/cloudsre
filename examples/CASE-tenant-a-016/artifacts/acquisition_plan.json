@@ -1,0 +1,69 @@
+[
+ {
+  "source": "cloudtrail",
+  "stakeholder": "Cloud service owner",
+  "obtain_from": "service owner (CSP fallback)",
+  "mechanisms": [
+   "CLI",
+   "Management console",
+   "APIs"
+  ],
+  "artifacts": [
+   "account activities",
+   "service logs",
+   "application logs",
+   "data logs"
+  ],
+  "dependency": "OP"
+ },
+ {
+  "source": "hypervisor",
+  "stakeholder": "CSP (hypervisor)",
+  "obtain_from": "CSP",
+  "mechanisms": [
+   "CLI",
+   "Management console",
+   "APIs"
+  ],
+  "artifacts": [
+   "event logs/syslog",
+   "audit logs",
+   "/var/log",
+   "/proc"
+  ],
+  "dependency": "P"
+ },
+ {
+  "source": "s3access",
+  "stakeholder": "CSP (cloud storage management)",
+  "obtain_from": "CSP",
+  "mechanisms": [
+   "CLI",
+   "Management console",
+   "APIs"
+  ],
+  "artifacts": [
+   "backups",
+   "archives",
+   "snapshots",
+   "replicas",
+   "databases",
+   "storage access logs"
+  ],
+  "dependency": "P"
+ },
+ {
+  "source": "vpcflow",
+  "stakeholder": "Virtual machine",
+  "obtain_from": "service owner (CSP fallback)",
+  "mechanisms": [
+   "CLI",
+   "Management console",
+   "APIs"
+  ],
+  "artifacts": [
+   "network/flow logs"
+  ],
+  "dependency": "OP"
+ }
+]

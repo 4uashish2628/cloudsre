@@ -1,0 +1,687 @@
+{
+ "E1": {
+  "Plain central log": {
+   "throughput_eps": 6457654,
+   "overhead_pct": 0.0,
+   "full_verify_s": 0.0
+  },
+  "Per-entry hash": {
+   "throughput_eps": 2156536,
+   "overhead_pct": 22.7,
+   "full_verify_s": 0.013
+  },
+  "Hash chain": {
+   "throughput_eps": 1919100,
+   "overhead_pct": 51.1,
+   "full_verify_s": 0.03
+  },
+  "Blockchain (PoW)": {
+   "throughput_eps": 44247,
+   "overhead_pct": 24.4,
+   "full_verify_s": 0.042
+  },
+  "FRSL (proposed)": {
+   "throughput_eps": 320703,
+   "overhead_pct": 52.5,
+   "full_verify_s": 0.043
+  }
+ },
+ "E2": [
+  {
+   "n": 1000,
+   "single_verify_ms": 0.0058,
+   "proof_hashes": 10.0,
+   "proof_bytes": 320.0,
+   "full_verify_ms": 1.0038
+  },
+  {
+   "n": 5000,
+   "single_verify_ms": 0.0063,
+   "proof_hashes": 10.0,
+   "proof_bytes": 320.0,
+   "full_verify_ms": 5.0925
+  },
+  {
+   "n": 20000,
+   "single_verify_ms": 0.007,
+   "proof_hashes": 10.0,
+   "proof_bytes": 320.0,
+   "full_verify_ms": 18.2092
+  },
+  {
+   "n": 50000,
+   "single_verify_ms": 0.0081,
+   "proof_hashes": 10.0,
+   "proof_bytes": 320.0,
+   "full_verify_ms": 43.2026
+  }
+ ],
+ "E2_bloom": [
+  {
+   "target_fp": 0.01,
+   "measured_fp": 0.00997,
+   "bytes_per_10k": 11982,
+   "k": 7
+  },
+  {
+   "target_fp": 0.001,
+   "measured_fp": 0.00083,
+   "bytes_per_10k": 17972,
+   "k": 10
+  },
+  {
+   "target_fp": 0.0001,
+   "measured_fp": 9e-05,
+   "bytes_per_10k": 23963,
+   "k": 13
+  }
+ ],
+ "E3": {
+  "Blockchain (PoW)": 1.0,
+  "FRSL (proposed)": 1.0,
+  "Hash chain": 0.4,
+  "Per-entry hash": 0.2,
+  "Plain central log": 0.0
+ },
+ "E3_window": [
+  {
+   "epoch": 64,
+   "unsealed_entries": 15,
+   "truncate_detection": 1.0
+  },
+  {
+   "epoch": 256,
+   "unsealed_entries": 207,
+   "truncate_detection": 0.89
+  },
+  {
+   "epoch": 1024,
+   "unsealed_entries": 975,
+   "truncate_detection": 0.51
+  },
+  {
+   "epoch": 4096,
+   "unsealed_entries": 1999,
+   "truncate_detection": 0.0
+  }
+ ],
+ "E4": {
+  "Rules": {
+   "precision": [
+    0.4885,
+    0.0351
+   ],
+   "recall": [
+    0.3946,
+    0.0112
+   ],
+   "f1": [
+    0.4364,
+    0.0206
+   ],
+   "fpr": [
+    0.0348,
+    0.0039
+   ],
+   "alert_precision": [
+    0.7223,
+    0.0243
+   ],
+   "false_alerts": [
+    44.2,
+    5.8907
+   ],
+   "campaign_detection_rate": [
+    1.0,
+    0.0
+   ],
+   "mttd_s": [
+    83.0299,
+    4.2869
+   ]
+  },
+  "Isolation Forest": {
+   "precision": [
+    0.4171,
+    0.0295
+   ],
+   "recall": [
+    0.4653,
+    0.0263
+   ],
+   "f1": [
+    0.439,
+    0.0192
+   ],
+   "fpr": [
+    0.0551,
+    0.0083
+   ],
+   "alert_precision": [
+    0.1003,
+    0.0098
+   ],
+   "false_alerts": [
+    78.8,
+    9.094
+   ],
+   "campaign_detection_rate": [
+    0.26,
+    0.0822
+   ],
+   "mttd_s": [
+    443.5289,
+    95.9155
+   ]
+  },
+  "Hybrid (proposed)": {
+   "precision": [
+    0.7823,
+    0.0784
+   ],
+   "recall": [
+    0.3946,
+    0.0112
+   ],
+   "f1": [
+    0.524,
+    0.0262
+   ],
+   "fpr": [
+    0.0095,
+    0.0042
+   ],
+   "alert_precision": [
+    0.8886,
+    0.0318
+   ],
+   "false_alerts": [
+    14.6,
+    5.0299
+   ],
+   "campaign_detection_rate": [
+    1.0,
+    0.0
+   ],
+   "mttd_s": [
+    83.0299,
+    4.2869
+   ]
+  }
+ },
+ "E4_per_attack": {
+  "Hybrid (proposed)": {
+   "anti_forensics": 1.0,
+   "credential_exfil": 1.0,
+   "cryptomining": 1.0,
+   "priv_esc": 1.0,
+   "ssh_lateral": 1.0
+  },
+  "Isolation Forest": {
+   "anti_forensics": 0.05,
+   "credential_exfil": 1.0,
+   "cryptomining": 0.05,
+   "priv_esc": 0.2,
+   "ssh_lateral": 0.0
+  },
+  "Rules": {
+   "anti_forensics": 1.0,
+   "credential_exfil": 1.0,
+   "cryptomining": 1.0,
+   "priv_esc": 1.0,
+   "ssh_lateral": 1.0
+  }
+ },
+ "E5": {
+  "Time window": {
+   "ari": [
+    0.9579,
+    0.0522
+   ],
+   "v_measure": [
+    0.9717,
+    0.0216
+   ],
+   "completeness": [
+    1.0,
+    0.0
+   ],
+   "homogeneity": [
+    0.9456,
+    0.0398
+   ],
+   "fragmentation": [
+    0.81,
+    0.0652
+   ],
+   "incidents": [
+    23.2,
+    1.3038
+   ],
+   "alert_only_recall": [
+    0.4017,
+    0.0018
+   ],
+   "timeline_recall": [
+    1.0,
+    0.0
+   ],
+   "timeline_precision": [
+    0.8221,
+    0.0762
+   ],
+   "time_s": [
+    0.0934,
+    0.0415
+   ]
+  },
+  "Leader-Follower (static)": {
+   "ari": [
+    0.9985,
+    0.0002
+   ],
+   "v_measure": [
+    0.988,
+    0.0004
+   ],
+   "completeness": [
+    0.9769,
+    0.0018
+   ],
+   "homogeneity": [
+    0.9993,
+    0.0016
+   ],
+   "fragmentation": [
+    1.39,
+    0.0224
+   ],
+   "incidents": [
+    37.0,
+    2.8284
+   ],
+   "alert_only_recall": [
+    0.3303,
+    0.0018
+   ],
+   "timeline_recall": [
+    0.995,
+    0.0044
+   ],
+   "timeline_precision": [
+    0.8782,
+    0.0564
+   ],
+   "time_s": [
+    0.0765,
+    0.0071
+   ]
+  },
+  "Leader-Follower (adaptive)": {
+   "ari": [
+    0.998,
+    0.0004
+   ],
+   "v_measure": [
+    0.9808,
+    0.0025
+   ],
+   "completeness": [
+    0.9624,
+    0.0047
+   ],
+   "homogeneity": [
+    1.0,
+    0.0
+   ],
+   "fragmentation": [
+    1.85,
+    0.0791
+   ],
+   "incidents": [
+    46.2,
+    3.9623
+   ],
+   "alert_only_recall": [
+    0.3292,
+    0.0018
+   ],
+   "timeline_recall": [
+    0.9903,
+    0.0038
+   ],
+   "timeline_precision": [
+    0.8779,
+    0.0562
+   ],
+   "time_s": [
+    0.0774,
+    0.0046
+   ]
+  },
+  "Entity graph (proposed)": {
+   "ari": [
+    0.9996,
+    0.0004
+   ],
+   "v_measure": [
+    0.9958,
+    0.0015
+   ],
+   "completeness": [
+    0.993,
+    0.0002
+   ],
+   "homogeneity": [
+    0.9986,
+    0.0031
+   ],
+   "fragmentation": [
+    1.19,
+    0.0224
+   ],
+   "incidents": [
+    33.0,
+    2.8284
+   ],
+   "alert_only_recall": [
+    0.3351,
+    0.0018
+   ],
+   "timeline_recall": [
+    1.0,
+    0.0
+   ],
+   "timeline_precision": [
+    0.878,
+    0.0563
+   ],
+   "time_s": [
+    0.0894,
+    0.0367
+   ]
+  }
+ },
+ "E5_time_norm": {
+  "corrected": {
+   "timeline_recall": 1.0,
+   "ordering_accuracy": 1.0,
+   "f1": 0.524,
+   "campaign_detection_rate": 1.0,
+   "mean_abs_ts_error_s": 0.3136,
+   "recall_ssh_lateral": 1.0,
+   "recall_anti_forensics": 1.0,
+   "recall_cryptomining": 1.0,
+   "recall_credential_exfil": 1.0,
+   "recall_priv_esc": 1.0
+  },
+  "naive": {
+   "timeline_recall": 0.869,
+   "ordering_accuracy": 0.9576,
+   "f1": 0.5203,
+   "campaign_detection_rate": 0.98,
+   "mean_abs_ts_error_s": 7666.919,
+   "recall_ssh_lateral": 0.6282,
+   "recall_anti_forensics": 0.7167,
+   "recall_cryptomining": 1.0,
+   "recall_credential_exfil": 1.0,
+   "recall_priv_esc": 1.0
+  }
+ },
+ "E6": {
+  "naive_records": 7152.353,
+  "naive_leak": 51.017,
+  "isolated_records": 2028.672,
+  "isolated_leak": 0.0,
+  "pseudonymised_records": 201.538,
+  "evidence_retained": 1.0,
+  "foreign_records_naive": 5325.218,
+  "incidents": 119
+ },
+ "E7": [
+  {
+   "attack": "credential_exfil",
+   "setting": "CSP request (status quo)",
+   "cdi": 0.5,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 79.948,
+   "eat_p90_h": 280.746,
+   "eat_mean_h": 127.461
+  },
+  {
+   "attack": "credential_exfil",
+   "setting": "Forensic-ready (owner-side sources)",
+   "cdi": 0.5,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 73.361,
+   "eat_p90_h": 262.153,
+   "eat_mean_h": 118.324
+  },
+  {
+   "attack": "credential_exfil",
+   "setting": "Forensic-ready + FaaS (all sources)",
+   "cdi": 0.5,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 0.01,
+   "eat_p90_h": 0.01,
+   "eat_mean_h": 0.01
+  },
+  {
+   "attack": "priv_esc",
+   "setting": "CSP request (status quo)",
+   "cdi": 0.0,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 4.918,
+   "eat_p90_h": 71.235,
+   "eat_mean_h": 27.919
+  },
+  {
+   "attack": "priv_esc",
+   "setting": "Forensic-ready (owner-side sources)",
+   "cdi": 0.0,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 0.01,
+   "eat_p90_h": 0.01,
+   "eat_mean_h": 0.01
+  },
+  {
+   "attack": "priv_esc",
+   "setting": "Forensic-ready + FaaS (all sources)",
+   "cdi": 0.0,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 0.01,
+   "eat_p90_h": 0.01,
+   "eat_mean_h": 0.01
+  },
+  {
+   "attack": "cryptomining",
+   "setting": "CSP request (status quo)",
+   "cdi": 0.333,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 92.148,
+   "eat_p90_h": 308.534,
+   "eat_mean_h": 142.79
+  },
+  {
+   "attack": "cryptomining",
+   "setting": "Forensic-ready (owner-side sources)",
+   "cdi": 0.333,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 73.315,
+   "eat_p90_h": 256.026,
+   "eat_mean_h": 118.124
+  },
+  {
+   "attack": "cryptomining",
+   "setting": "Forensic-ready + FaaS (all sources)",
+   "cdi": 0.333,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 0.01,
+   "eat_p90_h": 0.01,
+   "eat_mean_h": 0.01
+  },
+  {
+   "attack": "ssh_lateral",
+   "setting": "CSP request (status quo)",
+   "cdi": 0.0,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 8.188,
+   "eat_p90_h": 136.442,
+   "eat_mean_h": 49.421
+  },
+  {
+   "attack": "ssh_lateral",
+   "setting": "Forensic-ready (owner-side sources)",
+   "cdi": 0.0,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 0.01,
+   "eat_p90_h": 0.01,
+   "eat_mean_h": 0.01
+  },
+  {
+   "attack": "ssh_lateral",
+   "setting": "Forensic-ready + FaaS (all sources)",
+   "cdi": 0.0,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 0.01,
+   "eat_p90_h": 0.01,
+   "eat_mean_h": 0.01
+  },
+  {
+   "attack": "anti_forensics",
+   "setting": "CSP request (status quo)",
+   "cdi": 0.0,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 8.285,
+   "eat_p90_h": 140.279,
+   "eat_mean_h": 49.253
+  },
+  {
+   "attack": "anti_forensics",
+   "setting": "Forensic-ready (owner-side sources)",
+   "cdi": 0.0,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 0.01,
+   "eat_p90_h": 0.01,
+   "eat_mean_h": 0.01
+  },
+  {
+   "attack": "anti_forensics",
+   "setting": "Forensic-ready + FaaS (all sources)",
+   "cdi": 0.0,
+   "cdi_uncooperative_owner": 1.0,
+   "eat_median_h": 0.01,
+   "eat_p90_h": 0.01,
+   "eat_mean_h": 0.01
+  }
+ ],
+ "E8": [
+  {
+   "tenants": 2,
+   "hours": 24,
+   "records": 19525,
+   "total_s": 0.414,
+   "eps": 47126.074,
+   "package_s_per_incident": 0.004,
+   "preserve_s": 0.063,
+   "normalise_s": 0.164,
+   "detect_s": 0.174,
+   "correlate_s": 0.013
+  },
+  {
+   "tenants": 4,
+   "hours": 24,
+   "records": 36867,
+   "total_s": 0.7,
+   "eps": 52695.988,
+   "package_s_per_incident": 0.003,
+   "preserve_s": 0.121,
+   "normalise_s": 0.197,
+   "detect_s": 0.354,
+   "correlate_s": 0.022
+  },
+  {
+   "tenants": 8,
+   "hours": 24,
+   "records": 71023,
+   "total_s": 1.324,
+   "eps": 53636.987,
+   "package_s_per_incident": 0.005,
+   "preserve_s": 0.233,
+   "normalise_s": 0.468,
+   "detect_s": 0.575,
+   "correlate_s": 0.038
+  },
+  {
+   "tenants": 8,
+   "hours": 48,
+   "records": 133397,
+   "total_s": 2.557,
+   "eps": 52171.451,
+   "package_s_per_incident": 0.01,
+   "preserve_s": 0.425,
+   "normalise_s": 0.843,
+   "detect_s": 1.201,
+   "correlate_s": 0.068
+  },
+  {
+   "tenants": 16,
+   "hours": 48,
+   "records": 276024,
+   "total_s": 5.284,
+   "eps": 52241.953,
+   "package_s_per_incident": 0.015,
+   "preserve_s": 1.125,
+   "normalise_s": 1.716,
+   "detect_s": 2.266,
+   "correlate_s": 0.139
+  }
+ ],
+ "custody": {
+  "clean_verifies": true,
+  "tampered_detected": true,
+  "problems": [
+   "artifact modified: a.log",
+   "manifest root differs from sealed root"
+  ]
+ },
+ "runtime_s": 65.9,
+ "config": {
+  "sizes": [
+   1000,
+   5000,
+   20000,
+   50000
+  ],
+  "trials": 100,
+  "seeds": [
+   1,
+   2,
+   3,
+   4,
+   5
+  ],
+  "scales": [
+   [
+    2,
+    24
+   ],
+   [
+    4,
+    24
+   ],
+   [
+    8,
+    24
+   ],
+   [
+    8,
+    48
+   ],
+   [
+    16,
+    48
+   ]
+  ]
+ }
+}

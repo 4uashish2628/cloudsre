@@ -1,0 +1,35 @@
+[
+ {
+  "source": "syslog",
+  "stakeholder": "Virtual machine",
+  "obtain_from": "service owner (CSP fallback)",
+  "mechanisms": [
+   "CLI",
+   "Management console",
+   "APIs"
+  ],
+  "artifacts": [
+   "guest OS logs",
+   "firewall logs",
+   "IDS/IPS logs",
+   "VM snapshots",
+   "application logs",
+   "transaction logs"
+  ],
+  "dependency": "OP"
+ },
+ {
+  "source": "vpcflow",
+  "stakeholder": "Virtual machine",
+  "obtain_from": "service owner (CSP fallback)",
+  "mechanisms": [
+   "CLI",
+   "Management console",
+   "APIs"
+  ],
+  "artifacts": [
+   "network/flow logs"
+  ],
+  "dependency": "OP"
+ }
+]

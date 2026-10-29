@@ -1,0 +1,51 @@
+scheme,recompute,attack,detection_rate
+Plain central log,False,modify,0.0
+Plain central log,False,delete,0.0
+Plain central log,False,insert,0.0
+Plain central log,False,reorder,0.0
+Plain central log,False,truncate,0.0
+Plain central log,True,modify,0.0
+Plain central log,True,delete,0.0
+Plain central log,True,insert,0.0
+Plain central log,True,reorder,0.0
+Plain central log,True,truncate,0.0
+Per-entry hash,False,modify,1.0
+Per-entry hash,False,delete,0.0
+Per-entry hash,False,insert,1.0
+Per-entry hash,False,reorder,0.0
+Per-entry hash,False,truncate,0.0
+Per-entry hash,True,modify,0.0
+Per-entry hash,True,delete,0.0
+Per-entry hash,True,insert,0.0
+Per-entry hash,True,reorder,0.0
+Per-entry hash,True,truncate,0.0
+Hash chain,False,modify,1.0
+Hash chain,False,delete,1.0
+Hash chain,False,insert,1.0
+Hash chain,False,reorder,1.0
+Hash chain,False,truncate,0.0
+Hash chain,True,modify,0.0
+Hash chain,True,delete,0.0
+Hash chain,True,insert,0.0
+Hash chain,True,reorder,0.0
+Hash chain,True,truncate,0.0
+Blockchain (PoW),False,modify,1.0
+Blockchain (PoW),False,delete,1.0
+Blockchain (PoW),False,insert,1.0
+Blockchain (PoW),False,reorder,1.0
+Blockchain (PoW),False,truncate,1.0
+Blockchain (PoW),True,modify,1.0
+Blockchain (PoW),True,delete,1.0
+Blockchain (PoW),True,insert,1.0
+Blockchain (PoW),True,reorder,1.0
+Blockchain (PoW),True,truncate,1.0
+FRSL (proposed),False,modify,1.0
+FRSL (proposed),False,delete,1.0
+FRSL (proposed),False,insert,1.0
+FRSL (proposed),False,reorder,1.0
+FRSL (proposed),False,truncate,1.0
+FRSL (proposed),True,modify,1.0
+FRSL (proposed),True,delete,1.0
+FRSL (proposed),True,insert,1.0
+FRSL (proposed),True,reorder,1.0
+FRSL (proposed),True,truncate,1.0

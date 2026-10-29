@@ -1,0 +1,362 @@
+{"eventVersion":"1.08","eventTime":"2026-01-05T14:44:30Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"ap-southeast-1","sourceIPAddress":"77.155.55.131","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"07000000175E","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T14:44:40Z","eventSource":"ec2.amazonaws.com","eventName":"RunInstances","awsRegion":"ap-southeast-1","sourceIPAddress":"77.155.55.131","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"instanceType":"p3.8xlarge","minCount":1,"tag":"vm-a-x17"},"requestID":"07000000175F","recipientAccountId":"111111111111","responseElements":{"instancesSet":{"items":[{"instanceId":"vm-a-x17","privateIpAddress":"10.1.9.17"}]}}}
+{"eventVersion":"1.08","eventTime":"2026-01-05T14:45:00Z","eventSource":"ec2.amazonaws.com","eventName":"RunInstances","awsRegion":"ap-southeast-1","sourceIPAddress":"77.155.55.131","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"instanceType":"p3.8xlarge","minCount":1,"tag":"vm-a-x18"},"requestID":"070000001760","recipientAccountId":"111111111111","responseElements":{"instancesSet":{"items":[{"instanceId":"vm-a-x18","privateIpAddress":"10.1.9.18"}]}}}
+{"eventVersion":"1.08","eventTime":"2026-01-05T14:45:10Z","eventSource":"ec2.amazonaws.com","eventName":"RunInstances","awsRegion":"ap-southeast-1","sourceIPAddress":"77.155.55.131","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"instanceType":"p3.8xlarge","minCount":1,"tag":"vm-a-x19"},"requestID":"070000001761","recipientAccountId":"111111111111","responseElements":{"instancesSet":{"items":[{"instanceId":"vm-a-x19","privateIpAddress":"10.1.9.19"}]}}}
+2026-01-05T15:45:34.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) started vcpus=32
+{"eventVersion":"1.08","eventTime":"2026-01-05T14:45:26Z","eventSource":"ec2.amazonaws.com","eventName":"RunInstances","awsRegion":"ap-southeast-1","sourceIPAddress":"77.155.55.131","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"instanceType":"p3.8xlarge","minCount":1,"tag":"vm-a-x20"},"requestID":"070000001762","recipientAccountId":"111111111111","responseElements":{"instancesSet":{"items":[{"instanceId":"vm-a-x20","privateIpAddress":"10.1.9.20"}]}}}
+{"eventVersion":"1.08","eventTime":"2026-01-05T14:45:38Z","eventSource":"ec2.amazonaws.com","eventName":"RunInstances","awsRegion":"ap-southeast-1","sourceIPAddress":"77.155.55.131","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"instanceType":"p3.8xlarge","minCount":1,"tag":"vm-a-x21"},"requestID":"070000001763","recipientAccountId":"111111111111","responseElements":{"instancesSet":{"items":[{"instanceId":"vm-a-x21","privateIpAddress":"10.1.9.21"}]}}}
+2026-01-05T15:45:09.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) started vcpus=32
+2026-01-05T15:46:03.604+01:00 hv-node-3 libvirtd: domain vm-a-x19 (tenant-a) started vcpus=32
+{"eventVersion":"1.08","eventTime":"2026-01-05T14:45:56Z","eventSource":"ec2.amazonaws.com","eventName":"RunInstances","awsRegion":"ap-southeast-1","sourceIPAddress":"77.155.55.131","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"instanceType":"p3.8xlarge","minCount":1,"tag":"vm-a-x22"},"requestID":"070000001764","recipientAccountId":"111111111111","responseElements":{"instancesSet":{"items":[{"instanceId":"vm-a-x22","privateIpAddress":"10.1.9.22"}]}}}
+2026-01-05T15:46:20.205+01:00 hv-node-3 libvirtd: domain vm-a-x20 (tenant-a) started vcpus=32
+{"eventVersion":"1.08","eventTime":"2026-01-05T14:46:13Z","eventSource":"ec2.amazonaws.com","eventName":"RunInstances","awsRegion":"ap-southeast-1","sourceIPAddress":"77.155.55.131","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"instanceType":"p3.8xlarge","minCount":1,"tag":"vm-a-x23"},"requestID":"070000001765","recipientAccountId":"111111111111","responseElements":{"instancesSet":{"items":[{"instanceId":"vm-a-x23","privateIpAddress":"10.1.9.23"}]}}}
+2026-01-05T15:45:46.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) started vcpus=32
+2026-01-05T15:46:50.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) started vcpus=32
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 56711 4444 6 23 20873 1767624400 1767624460 ACCEPT OK
+2026-01-05T15:46:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=98% mem=41%
+2026-01-05T15:47:07.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) started vcpus=32
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 42148 4444 6 29 26139 1767624420 1767624480 ACCEPT OK
+2026-01-05T15:46:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 49024 14444 6 17 15654 1767624430 1767624490 ACCEPT OK
+2026-01-05T15:47:23.604+01:00 hv-node-3 libvirtd: domain vm-a-x19 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 37649 3333 6 30 27336 1767624446 1767624506 ACCEPT OK
+2026-01-05T15:47:40.205+01:00 hv-node-3 libvirtd: domain vm-a-x20 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 32758 3333 6 25 22550 1767624458 1767624518 ACCEPT OK
+2026-01-05T15:47:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 42464 3333 6 15 13684 1767624476 1767624536 ACCEPT OK
+2026-01-05T15:48:10.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 36893 14444 6 32 29424 1767624493 1767624553 ACCEPT OK
+2026-01-05T15:48:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 38535 14444 6 29 26534 1767624700 1767624760 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 47587 4444 6 31 28532 1767624720 1767624780 ACCEPT OK
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 33697 14444 6 14 13107 1767624730 1767624790 ACCEPT OK
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 36761 14444 6 17 15320 1767624746 1767624806 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 57372 4444 6 19 17608 1767624758 1767624818 ACCEPT OK
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 42281 3333 6 13 11988 1767624776 1767624836 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 36930 4444 6 21 19736 1767624793 1767624853 ACCEPT OK
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 35352 4444 6 16 14657 1767625000 1767625060 ACCEPT OK
+2026-01-05T15:56:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 44146 14444 6 11 9924 1767625020 1767625080 ACCEPT OK
+2026-01-05T15:56:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 42498 4444 6 23 20847 1767625030 1767625090 ACCEPT OK
+2026-01-05T15:57:23.604+01:00 hv-node-3 libvirtd: domain vm-a-x19 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 32667 4444 6 21 18950 1767625046 1767625106 ACCEPT OK
+2026-01-05T15:57:40.205+01:00 hv-node-3 libvirtd: domain vm-a-x20 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 32184 4444 6 18 17079 1767625058 1767625118 ACCEPT OK
+2026-01-05T15:57:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 59420 14444 6 14 12637 1767625076 1767625136 ACCEPT OK
+2026-01-05T15:58:10.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 30069 4444 6 22 20283 1767625093 1767625153 ACCEPT OK
+2026-01-05T15:58:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 31008 4444 6 4 4021 1767625300 1767625360 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 38579 3333 6 16 15128 1767625320 1767625380 ACCEPT OK
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 50185 3333 6 9 8697 1767625330 1767625390 ACCEPT OK
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 49582 3333 6 32 28914 1767625346 1767625406 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 49996 4444 6 9 8926 1767625358 1767625418 ACCEPT OK
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 56599 14444 6 18 16564 1767625376 1767625436 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 44581 3333 6 4 4299 1767625393 1767625453 ACCEPT OK
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 37765 3333 6 9 8914 1767625600 1767625660 ACCEPT OK
+2026-01-05T16:06:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 31795 3333 6 29 26293 1767625620 1767625680 ACCEPT OK
+2026-01-05T16:06:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 47342 14444 6 15 13817 1767625630 1767625690 ACCEPT OK
+2026-01-05T16:07:23.604+01:00 hv-node-3 libvirtd: domain vm-a-x19 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 59947 14444 6 24 21638 1767625646 1767625706 ACCEPT OK
+2026-01-05T16:07:40.205+01:00 hv-node-3 libvirtd: domain vm-a-x20 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 59555 3333 6 17 15587 1767625658 1767625718 ACCEPT OK
+2026-01-05T16:07:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 57713 14444 6 20 18898 1767625676 1767625736 ACCEPT OK
+2026-01-05T16:08:10.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 32426 14444 6 5 5201 1767625693 1767625753 ACCEPT OK
+2026-01-05T16:08:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 46727 14444 6 24 21742 1767625900 1767625960 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 54337 3333 6 27 24566 1767625920 1767625980 ACCEPT OK
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 54296 4444 6 22 20148 1767625930 1767625990 ACCEPT OK
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 44194 3333 6 30 27303 1767625946 1767626006 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 42636 3333 6 26 23803 1767625958 1767626018 ACCEPT OK
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 30852 3333 6 17 15740 1767625976 1767626036 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 53756 14444 6 33 29891 1767625993 1767626053 ACCEPT OK
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 56723 4444 6 8 7975 1767626200 1767626260 ACCEPT OK
+2026-01-05T16:16:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 46501 3333 6 10 9531 1767626220 1767626280 ACCEPT OK
+2026-01-05T16:16:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 55963 4444 6 16 14543 1767626230 1767626290 ACCEPT OK
+2026-01-05T16:17:23.604+01:00 hv-node-3 libvirtd: domain vm-a-x19 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 47635 4444 6 31 28637 1767626246 1767626306 ACCEPT OK
+2026-01-05T16:17:40.205+01:00 hv-node-3 libvirtd: domain vm-a-x20 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 50035 3333 6 7 6727 1767626258 1767626318 ACCEPT OK
+2026-01-05T16:17:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 31552 4444 6 28 25749 1767626276 1767626336 ACCEPT OK
+2026-01-05T16:18:10.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 34628 14444 6 24 21806 1767626293 1767626353 ACCEPT OK
+2026-01-05T16:18:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 45309 14444 6 10 9450 1767626500 1767626560 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 54457 4444 6 29 26497 1767626520 1767626580 ACCEPT OK
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 47578 14444 6 28 25246 1767626530 1767626590 ACCEPT OK
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 59677 4444 6 28 25442 1767626546 1767626606 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 58120 3333 6 12 11526 1767626558 1767626618 ACCEPT OK
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 38705 4444 6 29 26207 1767626576 1767626636 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 37846 14444 6 31 28086 1767626593 1767626653 ACCEPT OK
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 52811 14444 6 9 8621 1767626800 1767626860 ACCEPT OK
+2026-01-05T16:26:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 36078 4444 6 11 10588 1767626820 1767626880 ACCEPT OK
+2026-01-05T16:26:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 30219 4444 6 15 13974 1767626830 1767626890 ACCEPT OK
+2026-01-05T16:27:23.604+01:00 hv-node-3 libvirtd: domain vm-a-x19 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 49564 3333 6 28 25769 1767626846 1767626906 ACCEPT OK
+2026-01-05T16:27:40.205+01:00 hv-node-3 libvirtd: domain vm-a-x20 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 57128 14444 6 28 26023 1767626858 1767626918 ACCEPT OK
+2026-01-05T16:27:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 59680 14444 6 12 11063 1767626876 1767626936 ACCEPT OK
+2026-01-05T16:28:10.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 30497 3333 6 16 15277 1767626893 1767626953 ACCEPT OK
+2026-01-05T16:28:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 48473 14444 6 18 16641 1767627100 1767627160 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 59764 14444 6 30 27455 1767627120 1767627180 ACCEPT OK
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 56216 3333 6 21 19689 1767627130 1767627190 ACCEPT OK
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 31234 14444 6 32 29319 1767627146 1767627206 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 43685 3333 6 32 29489 1767627158 1767627218 ACCEPT OK
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 37474 3333 6 32 29113 1767627176 1767627236 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 37756 14444 6 31 28190 1767627193 1767627253 ACCEPT OK
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 50228 14444 6 19 17317 1767627400 1767627460 ACCEPT OK
+2026-01-05T16:36:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 36441 14444 6 30 27385 1767627420 1767627480 ACCEPT OK
+2026-01-05T16:36:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 45301 14444 6 30 27605 1767627430 1767627490 ACCEPT OK
+2026-01-05T16:37:23.604+01:00 hv-node-3 libvirtd: domain vm-a-x19 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 32827 3333 6 23 21262 1767627446 1767627506 ACCEPT OK
+2026-01-05T16:37:40.205+01:00 hv-node-3 libvirtd: domain vm-a-x20 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 56845 3333 6 6 5505 1767627458 1767627518 ACCEPT OK
+2026-01-05T16:37:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 32641 3333 6 8 7309 1767627476 1767627536 ACCEPT OK
+2026-01-05T16:38:10.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 35055 3333 6 11 9911 1767627493 1767627553 ACCEPT OK
+2026-01-05T16:38:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 54894 3333 6 11 10720 1767627700 1767627760 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 55071 4444 6 31 27926 1767627720 1767627780 ACCEPT OK
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 57100 3333 6 10 9762 1767627730 1767627790 ACCEPT OK
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 32132 4444 6 32 29650 1767627746 1767627806 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 56670 14444 6 26 24084 1767627758 1767627818 ACCEPT OK
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 45992 3333 6 18 16251 1767627776 1767627836 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 44592 3333 6 21 19106 1767627793 1767627853 ACCEPT OK
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 54757 4444 6 25 23130 1767628000 1767628060 ACCEPT OK
+2026-01-05T16:46:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 34424 4444 6 25 22782 1767628020 1767628080 ACCEPT OK
+2026-01-05T16:46:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000019 10.1.9.19 45.9.148.21 36805 14444 6 7 7107 1767628030 1767628090 ACCEPT OK
+2026-01-05T16:47:23.604+01:00 hv-node-3 libvirtd: domain vm-a-x19 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 59255 14444 6 26 23545 1767628046 1767628106 ACCEPT OK
+2026-01-05T16:47:40.205+01:00 hv-node-3 libvirtd: domain vm-a-x20 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 36211 14444 6 14 12927 1767628058 1767628118 ACCEPT OK
+2026-01-05T16:47:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 46329 3333 6 33 29946 1767628076 1767628136 ACCEPT OK
+2026-01-05T16:48:10.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 37834 14444 6 9 8808 1767628093 1767628153 ACCEPT OK
+2026-01-05T16:48:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 48338 3333 6 14 13273 1767628300 1767628360 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 58275 3333 6 9 8661 1767628320 1767628380 ACCEPT OK
+2 111111111111 eni-x000020 10.1.9.20 45.9.148.21 42542 3333 6 19 17878 1767628346 1767628406 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 35147 3333 6 17 16164 1767628358 1767628418 ACCEPT OK
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 42586 14444 6 23 20941 1767628376 1767628436 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 42043 14444 6 20 18317 1767628393 1767628453 ACCEPT OK
+{"eventVersion":"1.08","eventTime":"2026-01-05T15:55:43Z","eventSource":"signin.amazonaws.com","eventName":"ConsoleLogin","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"Mozilla/5.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"07000000014F","recipientAccountId":"111111111111","errorCode":"Failed authentication","responseElements":{"ConsoleLogin":"Failure"}}
+{"eventVersion":"1.08","eventTime":"2026-01-05T15:55:58Z","eventSource":"signin.amazonaws.com","eventName":"ConsoleLogin","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"Mozilla/5.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"070000000150","recipientAccountId":"111111111111","errorCode":"Failed authentication","responseElements":{"ConsoleLogin":"Failure"}}
+{"eventVersion":"1.08","eventTime":"2026-01-05T15:56:25Z","eventSource":"signin.amazonaws.com","eventName":"ConsoleLogin","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"Mozilla/5.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"070000000151","recipientAccountId":"111111111111","responseElements":{"ConsoleLogin":"Success"}}
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 44665 4444 6 16 15143 1767628600 1767628660 ACCEPT OK
+2026-01-05T16:56:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=96% mem=41%
+{"eventVersion":"1.08","eventTime":"2026-01-05T15:56:57Z","eventSource":"iam.amazonaws.com","eventName":"GetCallerIdentity","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"070000000152","recipientAccountId":"111111111111"}
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 45956 3333 6 16 14880 1767628620 1767628680 ACCEPT OK
+2026-01-05T16:56:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=98% mem=41%
+{"eventVersion":"1.08","eventTime":"2026-01-05T15:57:28Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"bucketName":"a-prod-data","key":"reports/00445.bin"},"requestID":"070000000153","recipientAccountId":"111111111111"}
+111111111111 a-prod-data [05/Jan/2026:15:57:28 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/dave.a 070000000154 REST.GET.OBJECT reports/00445.bin 200 7485
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 45963 4444 6 19 17191 1767628658 1767628718 ACCEPT OK
+2026-01-05T16:57:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 53209 4444 6 7 6340 1767628676 1767628736 ACCEPT OK
+2026-01-05T16:58:10.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) heartbeat ok cpu=97% mem=41%
+{"eventVersion":"1.08","eventTime":"2026-01-05T15:58:05Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"bucketName":"a-ml-datasets","key":"models/04375.bin"},"requestID":"070000000155","recipientAccountId":"111111111111"}
+111111111111 a-ml-datasets [05/Jan/2026:15:58:06 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/dave.a 070000000156 REST.GET.OBJECT models/04375.bin 200 472305
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 43603 14444 6 7 6668 1767628693 1767628753 ACCEPT OK
+2026-01-05T16:58:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=96% mem=41%
+{"eventVersion":"1.08","eventTime":"2026-01-05T15:58:29Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"bucketName":"a-prod-data","key":"data/03000.bin"},"requestID":"070000000157","recipientAccountId":"111111111111"}
+111111111111 a-prod-data [05/Jan/2026:15:58:30 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/dave.a 070000000158 REST.GET.OBJECT data/03000.bin 200 1310475
+{"eventVersion":"1.08","eventTime":"2026-01-05T15:59:49Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"070000000159","recipientAccountId":"111111111111"}
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 58263 14444 6 9 8312 1767628900 1767628960 ACCEPT OK
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:01:53Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"07000000015A","recipientAccountId":"111111111111"}
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 47520 4444 6 14 12611 1767628920 1767628980 ACCEPT OK
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:02:20Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"07000000015B","recipientAccountId":"111111111111"}
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 53476 4444 6 5 4716 1767628958 1767629018 ACCEPT OK
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 52787 4444 6 23 20839 1767628976 1767629036 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 34134 14444 6 6 5961 1767628993 1767629053 ACCEPT OK
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:03:52Z","eventSource":"s3.amazonaws.com","eventName":"PutObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"bucketName":"a-logs","key":"models/00094.bin"},"requestID":"07000000015C","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:16:03:52 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/dave.a 07000000015D REST.PUT.OBJECT models/00094.bin 200 119714
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:04:39Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"bucketName":"a-logs","key":"img/04930.bin"},"requestID":"07000000015E","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:16:04:39 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/dave.a 07000000015F REST.GET.OBJECT img/04930.bin 200 1967360
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:05:11Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"bucketName":"a-prod-data","key":"reports/00360.bin"},"requestID":"070000000160","recipientAccountId":"111111111111"}
+111111111111 a-prod-data [05/Jan/2026:16:05:12 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/dave.a 070000000161 REST.GET.OBJECT reports/00360.bin 200 131034
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:05:46Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"bucketName":"a-prod-data","key":"data/00478.bin"},"requestID":"070000000162","recipientAccountId":"111111111111"}
+111111111111 a-prod-data [05/Jan/2026:16:05:46 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/dave.a 070000000163 REST.GET.OBJECT data/00478.bin 200 1914061
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 44172 14444 6 9 8465 1767629200 1767629260 ACCEPT OK
+2026-01-05T17:06:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=97% mem=41%
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:06:53Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"070000000164","recipientAccountId":"111111111111"}
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 36637 3333 6 17 15327 1767629220 1767629280 ACCEPT OK
+2026-01-05T17:06:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 35213 3333 6 11 10382 1767629258 1767629318 ACCEPT OK
+2026-01-05T17:07:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=97% mem=41%
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:07:42Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"070000000165","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:07:52Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"bucketName":"a-ml-datasets","key":"img/01430.bin"},"requestID":"070000000166","recipientAccountId":"111111111111"}
+111111111111 a-ml-datasets [05/Jan/2026:16:07:52 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/dave.a 070000000167 REST.GET.OBJECT img/01430.bin 200 1068561
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 37614 4444 6 18 17059 1767629276 1767629336 ACCEPT OK
+2026-01-05T17:08:10.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) heartbeat ok cpu=97% mem=41%
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:08:08Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"bucketName":"a-prod-data","key":"img/04410.bin"},"requestID":"070000000168","recipientAccountId":"111111111111"}
+111111111111 a-prod-data [05/Jan/2026:16:08:09 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/dave.a 070000000169 REST.GET.OBJECT img/04410.bin 200 15315
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 38774 4444 6 12 11403 1767629293 1767629353 ACCEPT OK
+2026-01-05T17:08:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=96% mem=41%
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:08:29Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"bucketName":"a-logs","key":"reports/03706.bin"},"requestID":"07000000016A","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:16:08:30 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/dave.a 07000000016B REST.GET.OBJECT reports/03706.bin 200 369823
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:08:41Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"07000000016C","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:09:27Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"07000000016D","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:11:24Z","eventSource":"iam.amazonaws.com","eventName":"GetCallerIdentity","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"07000000016E","recipientAccountId":"111111111111"}
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 33443 14444 6 17 15627 1767629500 1767629560 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 54547 4444 6 6 5449 1767629520 1767629580 ACCEPT OK
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:12:20Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{},"requestID":"07000000016F","recipientAccountId":"111111111111"}
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 39848 14444 6 31 28770 1767629558 1767629618 ACCEPT OK
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 55937 4444 6 17 15550 1767629576 1767629636 ACCEPT OK
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:13:11Z","eventSource":"s3.amazonaws.com","eventName":"PutObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/dave.a","userName":"dave.a","accessKeyId":"AKIAA9DF192276658"},"requestParameters":{"bucketName":"a-ml-datasets","key":"models/02421.bin"},"requestID":"070000000170","recipientAccountId":"111111111111"}
+111111111111 a-ml-datasets [05/Jan/2026:16:13:11 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/dave.a 070000000171 REST.PUT.OBJECT models/02421.bin 200 1348378
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 43578 4444 6 5 4859 1767629593 1767629653 ACCEPT OK
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 39424 3333 6 31 28289 1767629800 1767629860 ACCEPT OK
+2026-01-05T17:16:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 49011 4444 6 28 25667 1767629820 1767629880 ACCEPT OK
+2026-01-05T17:16:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 40937 4444 6 14 12611 1767629858 1767629918 ACCEPT OK
+2026-01-05T17:17:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 34377 4444 6 16 15054 1767629876 1767629936 ACCEPT OK
+2026-01-05T17:18:10.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 45100 4444 6 21 19790 1767629893 1767629953 ACCEPT OK
+2026-01-05T17:18:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 58612 3333 6 16 14758 1767630100 1767630160 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 59579 14444 6 26 24025 1767630120 1767630180 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 31870 4444 6 22 20645 1767630158 1767630218 ACCEPT OK
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 59078 14444 6 21 19254 1767630176 1767630236 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 41210 3333 6 32 28821 1767630193 1767630253 ACCEPT OK
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 52044 14444 6 6 5937 1767630400 1767630460 ACCEPT OK
+2026-01-05T17:26:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 47391 3333 6 31 27958 1767630420 1767630480 ACCEPT OK
+2026-01-05T17:26:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 51527 3333 6 26 23552 1767630458 1767630518 ACCEPT OK
+2026-01-05T17:27:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 35044 3333 6 22 20259 1767630476 1767630536 ACCEPT OK
+2026-01-05T17:28:10.275+01:00 hv-node-3 libvirtd: domain vm-a-x22 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 49363 4444 6 20 18190 1767630493 1767630553 ACCEPT OK
+2026-01-05T17:28:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 42697 14444 6 30 27176 1767630700 1767630760 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 58831 3333 6 22 20307 1767630720 1767630780 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 50394 4444 6 26 23793 1767630758 1767630818 ACCEPT OK
+2 111111111111 eni-x000022 10.1.9.22 45.9.148.21 53902 3333 6 30 27805 1767630776 1767630836 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 59592 14444 6 28 25926 1767630793 1767630853 ACCEPT OK
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 42648 3333 6 5 4566 1767631000 1767631060 ACCEPT OK
+2026-01-05T17:36:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 52082 14444 6 4 4249 1767631020 1767631080 ACCEPT OK
+2026-01-05T17:36:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 59153 14444 6 8 7803 1767631058 1767631118 ACCEPT OK
+2026-01-05T17:37:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 37948 14444 6 21 19029 1767631093 1767631153 ACCEPT OK
+2026-01-05T17:38:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 44337 4444 6 18 16904 1767631300 1767631360 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 36416 4444 6 9 8101 1767631320 1767631380 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 49984 14444 6 14 13026 1767631358 1767631418 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 44272 3333 6 4 4279 1767631393 1767631453 ACCEPT OK
+2 111111111111 eni-x000017 10.1.9.17 45.9.148.21 41157 14444 6 21 19008 1767631600 1767631660 ACCEPT OK
+2026-01-05T17:46:54.529+01:00 hv-node-3 libvirtd: domain vm-a-x17 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 51663 3333 6 7 6512 1767631620 1767631680 ACCEPT OK
+2026-01-05T17:46:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 38024 14444 6 28 25595 1767631658 1767631718 ACCEPT OK
+2026-01-05T17:47:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=96% mem=41%
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 37193 3333 6 11 10189 1767631693 1767631753 ACCEPT OK
+2026-01-05T17:48:27.184+01:00 hv-node-3 libvirtd: domain vm-a-x23 (tenant-a) heartbeat ok cpu=98% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 34345 3333 6 17 15629 1767631920 1767631980 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 49147 4444 6 27 24607 1767631958 1767632018 ACCEPT OK
+2 111111111111 eni-x000023 10.1.9.23 45.9.148.21 31079 14444 6 9 8811 1767631993 1767632053 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 55202 4444 6 33 29933 1767632220 1767632280 ACCEPT OK
+2026-01-05T17:56:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=97% mem=41%
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 31145 14444 6 22 20463 1767632258 1767632318 ACCEPT OK
+2026-01-05T17:57:06.764+01:00 hv-node-2 libvirtd: domain vm-a-x21 (tenant-a) heartbeat ok cpu=97% mem=41%
+{"eventVersion":"1.08","eventTime":"2026-01-05T16:59:10Z","eventSource":"signin.amazonaws.com","eventName":"ConsoleLogin","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"Mozilla/5.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/frank.a","userName":"frank.a","accessKeyId":"AKIAABEAA301850C5"},"requestParameters":{},"requestID":"07000000027F","recipientAccountId":"111111111111","responseElements":{"ConsoleLogin":"Success"}}
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:00:03Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/frank.a","userName":"frank.a","accessKeyId":"AKIAABEAA301850C5"},"requestParameters":{"bucketName":"a-ml-datasets","key":"reports/04247.bin"},"requestID":"070000000280","recipientAccountId":"111111111111"}
+111111111111 a-ml-datasets [05/Jan/2026:17:00:03 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/frank.a 070000000281 REST.GET.OBJECT reports/04247.bin 200 1702050
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:00:22Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/frank.a","userName":"frank.a","accessKeyId":"AKIAABEAA301850C5"},"requestParameters":{},"requestID":"070000000282","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:01:52Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/frank.a","userName":"frank.a","accessKeyId":"AKIAABEAA301850C5"},"requestParameters":{"bucketName":"a-prod-data","key":"img/03904.bin"},"requestID":"070000000283","recipientAccountId":"111111111111"}
+111111111111 a-prod-data [05/Jan/2026:17:01:52 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/frank.a 070000000284 REST.GET.OBJECT img/03904.bin 200 281512
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 47006 4444 6 15 13860 1767632520 1767632580 ACCEPT OK
+2 111111111111 eni-x000021 10.1.9.21 45.9.148.21 37975 3333 6 18 16839 1767632558 1767632618 ACCEPT OK
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:03:24Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/frank.a","userName":"frank.a","accessKeyId":"AKIAABEAA301850C5"},"requestParameters":{},"requestID":"070000000285","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:04:02Z","eventSource":"iam.amazonaws.com","eventName":"ListUsers","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/frank.a","userName":"frank.a","accessKeyId":"AKIAABEAA301850C5"},"requestParameters":{},"requestID":"070000000286","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:04:10Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/frank.a","userName":"frank.a","accessKeyId":"AKIAABEAA301850C5"},"requestParameters":{"bucketName":"a-ml-datasets","key":"reports/02917.bin"},"requestID":"070000000287","recipientAccountId":"111111111111"}
+111111111111 a-ml-datasets [05/Jan/2026:17:04:10 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/frank.a 070000000288 REST.GET.OBJECT reports/02917.bin 200 1092147
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:06:11Z","eventSource":"iam.amazonaws.com","eventName":"ListUsers","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/frank.a","userName":"frank.a","accessKeyId":"AKIAABEAA301850C5"},"requestParameters":{},"requestID":"070000000289","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:06:17Z","eventSource":"s3.amazonaws.com","eventName":"PutObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/frank.a","userName":"frank.a","accessKeyId":"AKIAABEAA301850C5"},"requestParameters":{"bucketName":"a-logs","key":"img/04721.bin"},"requestID":"07000000028A","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:17:06:17 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/frank.a 07000000028B REST.PUT.OBJECT img/04721.bin 200 1577623
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 36192 3333 6 15 13751 1767632820 1767632880 ACCEPT OK
+2026-01-05T18:06:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=99% mem=41%
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:07:59Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/frank.a","userName":"frank.a","accessKeyId":"AKIAABEAA301850C5"},"requestParameters":{},"requestID":"07000000028C","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:10:18Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/frank.a","userName":"frank.a","accessKeyId":"AKIAABEAA301850C5"},"requestParameters":{"bucketName":"a-ml-datasets","key":"reports/04345.bin"},"requestID":"07000000028D","recipientAccountId":"111111111111"}
+111111111111 a-ml-datasets [05/Jan/2026:17:10:18 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/frank.a 07000000028E REST.GET.OBJECT reports/04345.bin 200 1689163
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 34550 4444 6 22 20695 1767633120 1767633180 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 42081 3333 6 17 15590 1767633420 1767633480 ACCEPT OK
+2026-01-05T18:16:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 34257 14444 6 18 17069 1767633720 1767633780 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 30352 4444 6 9 8560 1767634020 1767634080 ACCEPT OK
+2026-01-05T18:26:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=99% mem=41%
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 55035 14444 6 30 27687 1767634320 1767634380 ACCEPT OK
+2 111111111111 eni-x000018 10.1.9.18 45.9.148.21 46158 4444 6 21 19666 1767634620 1767634680 ACCEPT OK
+2026-01-05T18:36:29.171+01:00 hv-node-2 libvirtd: domain vm-a-x18 (tenant-a) heartbeat ok cpu=99% mem=41%
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:58:42Z","eventSource":"signin.amazonaws.com","eventName":"ConsoleLogin","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"Mozilla/5.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001B3","recipientAccountId":"111111111111","responseElements":{"ConsoleLogin":"Success"}}
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:59:28Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-prod-data","key":"data/01017.bin"},"requestID":"0700000001B4","recipientAccountId":"111111111111"}
+111111111111 a-prod-data [05/Jan/2026:17:59:28 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001B5 REST.GET.OBJECT data/01017.bin 200 953902
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:59:53Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001B6","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T17:59:58Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-logs","key":"data/02048.bin"},"requestID":"0700000001B7","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:17:59:58 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001B8 REST.GET.OBJECT data/02048.bin 200 1783407
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:00:23Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-ml-datasets","key":"img/04245.bin"},"requestID":"0700000001B9","recipientAccountId":"111111111111"}
+111111111111 a-ml-datasets [05/Jan/2026:18:00:23 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001BA REST.GET.OBJECT img/04245.bin 200 1418091
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:01:12Z","eventSource":"s3.amazonaws.com","eventName":"ListBuckets","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001BB","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:01:29Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001BC","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:03:17Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001BD","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:03:52Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001BE","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:04:25Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001BF","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:04:53Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001C0","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:05:25Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-logs","key":"models/03361.bin"},"requestID":"0700000001C1","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:18:05:25 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001C2 REST.GET.OBJECT models/03361.bin 200 1558317
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:07:38Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001C3","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:07:47Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-prod-data","key":"models/00463.bin"},"requestID":"0700000001C4","recipientAccountId":"111111111111"}
+111111111111 a-prod-data [05/Jan/2026:18:07:47 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001C5 REST.GET.OBJECT models/00463.bin 200 531442
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:08:01Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-prod-data","key":"reports/03429.bin"},"requestID":"0700000001C6","recipientAccountId":"111111111111"}
+111111111111 a-prod-data [05/Jan/2026:18:08:02 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001C7 REST.GET.OBJECT reports/03429.bin 200 1921807
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:08:26Z","eventSource":"s3.amazonaws.com","eventName":"PutObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-logs","key":"models/00895.bin"},"requestID":"0700000001C8","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:18:08:26 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001C9 REST.PUT.OBJECT models/00895.bin 200 472658
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:08:42Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-ml-datasets","key":"data/03210.bin"},"requestID":"0700000001CA","recipientAccountId":"111111111111"}
+111111111111 a-ml-datasets [05/Jan/2026:18:08:43 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001CB REST.GET.OBJECT data/03210.bin 200 971128
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:08:53Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001CC","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:10:08Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-logs","key":"data/01198.bin"},"requestID":"0700000001CD","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:18:10:08 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001CE REST.GET.OBJECT data/01198.bin 200 742570
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:10:57Z","eventSource":"s3.amazonaws.com","eventName":"ListBuckets","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001CF","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:11:25Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001D0","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:12:13Z","eventSource":"s3.amazonaws.com","eventName":"PutObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-logs","key":"models/01887.bin"},"requestID":"0700000001D1","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:18:12:13 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001D2 REST.PUT.OBJECT models/01887.bin 200 562829
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:13:07Z","eventSource":"s3.amazonaws.com","eventName":"PutObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-logs","key":"data/03945.bin"},"requestID":"0700000001D3","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:18:13:08 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001D4 REST.PUT.OBJECT data/03945.bin 200 7651
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:14:21Z","eventSource":"s3.amazonaws.com","eventName":"PutObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-logs","key":"data/02472.bin"},"requestID":"0700000001D5","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:18:14:21 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001D6 REST.PUT.OBJECT data/02472.bin 200 673760
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:14:50Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-ml-datasets","key":"reports/02969.bin"},"requestID":"0700000001D7","recipientAccountId":"111111111111"}
+111111111111 a-ml-datasets [05/Jan/2026:18:14:51 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001D8 REST.GET.OBJECT reports/02969.bin 200 322346
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:16:49Z","eventSource":"s3.amazonaws.com","eventName":"ListBuckets","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001D9","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:16:53Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-logs","key":"data/04347.bin"},"requestID":"0700000001DA","recipientAccountId":"111111111111"}
+111111111111 a-logs [05/Jan/2026:18:16:54 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001DB REST.GET.OBJECT data/04347.bin 200 1745421
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:17:12Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-ml-datasets","key":"reports/01718.bin"},"requestID":"0700000001DC","recipientAccountId":"111111111111"}
+111111111111 a-ml-datasets [05/Jan/2026:18:17:13 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001DD REST.GET.OBJECT reports/01718.bin 200 1998003
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:17:16Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001DE","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:17:21Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001DF","recipientAccountId":"111111111111"}
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:17:30Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-prod-data","key":"data/03297.bin"},"requestID":"0700000001E0","recipientAccountId":"111111111111"}
+111111111111 a-prod-data [05/Jan/2026:18:17:30 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001E1 REST.GET.OBJECT data/03297.bin 200 1662261
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:18:04Z","eventSource":"s3.amazonaws.com","eventName":"GetObject","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{"bucketName":"a-ml-datasets","key":"reports/04493.bin"},"requestID":"0700000001E2","recipientAccountId":"111111111111"}
+111111111111 a-ml-datasets [05/Jan/2026:18:18:05 +0000] 192.0.2.10 arn:aws:iam::111111111111:user/erin.a 0700000001E3 REST.GET.OBJECT reports/04493.bin 200 1654710
+{"eventVersion":"1.08","eventTime":"2026-01-05T18:18:50Z","eventSource":"ec2.amazonaws.com","eventName":"DescribeInstances","awsRegion":"us-east-1","sourceIPAddress":"192.0.2.10","userAgent":"aws-cli/2.15.0","userIdentity":{"type":"IAMUser","accountId":"111111111111","arn":"arn:aws:iam::111111111111:user/erin.a","userName":"erin.a","accessKeyId":"AKIAA5C88AE97BA94"},"requestParameters":{},"requestID":"0700000001E4","recipientAccountId":"111111111111"}

@@ -1,0 +1,76 @@
+detector,seed,attack,detected
+Rules,1,cryptomining,1.0
+Rules,1,anti_forensics,1.0
+Rules,1,ssh_lateral,1.0
+Rules,1,credential_exfil,1.0
+Rules,1,priv_esc,1.0
+Isolation Forest,1,cryptomining,0.0
+Isolation Forest,1,anti_forensics,0.0
+Isolation Forest,1,ssh_lateral,0.0
+Isolation Forest,1,credential_exfil,1.0
+Isolation Forest,1,priv_esc,0.0
+Hybrid (proposed),1,cryptomining,1.0
+Hybrid (proposed),1,anti_forensics,1.0
+Hybrid (proposed),1,ssh_lateral,1.0
+Hybrid (proposed),1,credential_exfil,1.0
+Hybrid (proposed),1,priv_esc,1.0
+Rules,2,cryptomining,1.0
+Rules,2,ssh_lateral,1.0
+Rules,2,credential_exfil,1.0
+Rules,2,priv_esc,1.0
+Rules,2,anti_forensics,1.0
+Isolation Forest,2,cryptomining,0.0
+Isolation Forest,2,ssh_lateral,0.0
+Isolation Forest,2,credential_exfil,1.0
+Isolation Forest,2,priv_esc,0.25
+Isolation Forest,2,anti_forensics,0.0
+Hybrid (proposed),2,cryptomining,1.0
+Hybrid (proposed),2,ssh_lateral,1.0
+Hybrid (proposed),2,credential_exfil,1.0
+Hybrid (proposed),2,priv_esc,1.0
+Hybrid (proposed),2,anti_forensics,1.0
+Rules,3,cryptomining,1.0
+Rules,3,anti_forensics,1.0
+Rules,3,ssh_lateral,1.0
+Rules,3,credential_exfil,1.0
+Rules,3,priv_esc,1.0
+Isolation Forest,3,cryptomining,0.0
+Isolation Forest,3,anti_forensics,0.25
+Isolation Forest,3,ssh_lateral,0.0
+Isolation Forest,3,credential_exfil,1.0
+Isolation Forest,3,priv_esc,0.0
+Hybrid (proposed),3,cryptomining,1.0
+Hybrid (proposed),3,anti_forensics,1.0
+Hybrid (proposed),3,ssh_lateral,1.0
+Hybrid (proposed),3,credential_exfil,1.0
+Hybrid (proposed),3,priv_esc,1.0
+Rules,4,anti_forensics,1.0
+Rules,4,cryptomining,1.0
+Rules,4,ssh_lateral,1.0
+Rules,4,credential_exfil,1.0
+Rules,4,priv_esc,1.0
+Isolation Forest,4,anti_forensics,0.0
+Isolation Forest,4,cryptomining,0.25
+Isolation Forest,4,ssh_lateral,0.0
+Isolation Forest,4,credential_exfil,1.0
+Isolation Forest,4,priv_esc,0.75
+Hybrid (proposed),4,anti_forensics,1.0
+Hybrid (proposed),4,cryptomining,1.0
+Hybrid (proposed),4,ssh_lateral,1.0
+Hybrid (proposed),4,credential_exfil,1.0
+Hybrid (proposed),4,priv_esc,1.0
+Rules,5,priv_esc,1.0
+Rules,5,anti_forensics,1.0
+Rules,5,cryptomining,1.0
+Rules,5,ssh_lateral,1.0
+Rules,5,credential_exfil,1.0
+Isolation Forest,5,priv_esc,0.0
+Isolation Forest,5,anti_forensics,0.0
+Isolation Forest,5,cryptomining,0.0
+Isolation Forest,5,ssh_lateral,0.0
+Isolation Forest,5,credential_exfil,1.0
+Hybrid (proposed),5,priv_esc,1.0
+Hybrid (proposed),5,anti_forensics,1.0
+Hybrid (proposed),5,cryptomining,1.0
+Hybrid (proposed),5,ssh_lateral,1.0
+Hybrid (proposed),5,credential_exfil,1.0

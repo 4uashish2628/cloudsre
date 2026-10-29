@@ -1,0 +1,16 @@
+attack,setting,cdi,cdi_uncooperative_owner,eat_median_h,eat_p90_h,eat_mean_h
+credential_exfil,CSP request (status quo),0.5,1.0,79.94797747683782,280.7459670283989,127.46125209047652
+credential_exfil,Forensic-ready (owner-side sources),0.5,1.0,73.36082795160907,262.15313638384094,118.3235332530906
+credential_exfil,Forensic-ready + FaaS (all sources),0.5,1.0,0.01,0.01,0.01
+priv_esc,CSP request (status quo),0.0,1.0,4.918365700334881,71.23545474014576,27.919093414876215
+priv_esc,Forensic-ready (owner-side sources),0.0,1.0,0.01,0.01,0.01
+priv_esc,Forensic-ready + FaaS (all sources),0.0,1.0,0.01,0.01,0.01
+cryptomining,CSP request (status quo),0.3333333333333333,1.0,92.14795555447691,308.53447756785937,142.78995645631795
+cryptomining,Forensic-ready (owner-side sources),0.3333333333333333,1.0,73.31461842476196,256.0258162145024,118.12373360235259
+cryptomining,Forensic-ready + FaaS (all sources),0.3333333333333333,1.0,0.01,0.01,0.01
+ssh_lateral,CSP request (status quo),0.0,1.0,8.188076221134834,136.44203591618336,49.42139449276013
+ssh_lateral,Forensic-ready (owner-side sources),0.0,1.0,0.01,0.01,0.01
+ssh_lateral,Forensic-ready + FaaS (all sources),0.0,1.0,0.01,0.01,0.01
+anti_forensics,CSP request (status quo),0.0,1.0,8.284866185589973,140.2792539976504,49.253092949757075
+anti_forensics,Forensic-ready (owner-side sources),0.0,1.0,0.01,0.01,0.01
+anti_forensics,Forensic-ready + FaaS (all sources),0.0,1.0,0.01,0.01,0.01

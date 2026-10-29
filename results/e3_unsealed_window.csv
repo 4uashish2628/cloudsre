@@ -1,0 +1,5 @@
+epoch,unsealed_entries,truncate_detection
+64,15,1.0
+256,207,0.89
+1024,975,0.51
+4096,1999,0.0

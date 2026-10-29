@@ -1,0 +1,141 @@
+[
+ {
+  "rule": "R4_instance_burst",
+  "ts": 1767624300.0,
+  "tenant": "tenant-a",
+  "key": "user:dave.a",
+  "eids": [
+   22996,
+   23003
+  ],
+  "severity": "high",
+  "score": 1.0,
+  "suppressed": false,
+  "context": {
+   "region": "ap-southeast-1"
+  }
+ },
+ {
+  "rule": "R4_instance_burst",
+  "ts": 1767624326.0,
+  "tenant": "tenant-a",
+  "key": "user:dave.a",
+  "eids": [
+   23009,
+   23022
+  ],
+  "severity": "high",
+  "score": 1.0,
+  "suppressed": false,
+  "context": {
+   "region": "ap-southeast-1"
+  }
+ },
+ {
+  "rule": "R4_instance_burst",
+  "ts": 1767624356.0,
+  "tenant": "tenant-a",
+  "key": "user:dave.a",
+  "eids": [
+   23025,
+   23034
+  ],
+  "severity": "high",
+  "score": 1.0,
+  "suppressed": false,
+  "context": {
+   "region": "ap-southeast-1"
+  }
+ },
+ {
+  "rule": "R4_mining_pool_traffic",
+  "ts": 1767624400.0,
+  "tenant": "tenant-a",
+  "key": "ip:45.9.148.21",
+  "eids": [
+   23062
+  ],
+  "severity": "high",
+  "score": 1.0,
+  "suppressed": false,
+  "context": {}
+ },
+ {
+  "rule": "R4_mining_pool_traffic",
+  "ts": 1767624420.0,
+  "tenant": "tenant-a",
+  "key": "ip:45.9.148.21",
+  "eids": [
+   23077
+  ],
+  "severity": "high",
+  "score": 1.0,
+  "suppressed": false,
+  "context": {}
+ },
+ {
+  "rule": "R4_mining_pool_traffic",
+  "ts": 1767624430.0,
+  "tenant": "tenant-a",
+  "key": "ip:45.9.148.21",
+  "eids": [
+   23081
+  ],
+  "severity": "high",
+  "score": 1.0,
+  "suppressed": false,
+  "context": {}
+ },
+ {
+  "rule": "R4_mining_pool_traffic",
+  "ts": 1767624446.0,
+  "tenant": "tenant-a",
+  "key": "ip:45.9.148.21",
+  "eids": [
+   23094
+  ],
+  "severity": "high",
+  "score": 1.0,
+  "suppressed": false,
+  "context": {}
+ },
+ {
+  "rule": "R4_mining_pool_traffic",
+  "ts": 1767624458.0,
+  "tenant": "tenant-a",
+  "key": "ip:45.9.148.21",
+  "eids": [
+   23104
+  ],
+  "severity": "high",
+  "score": 1.0,
+  "suppressed": false,
+  "context": {}
+ },
+ {
+  "rule": "R4_mining_pool_traffic",
+  "ts": 1767624476.0,
+  "tenant": "tenant-a",
+  "key": "ip:45.9.148.21",
+  "eids": [
+   23113
+  ],
+  "severity": "high",
+  "score": 1.0,
+  "suppressed": false,
+  "context": {}
+ },
+ {
+  "rule": "R4_mining_pool_traffic",
+  "ts": 1767624493.0,
+  "tenant": "tenant-a",
+  "key": "ip:45.9.148.21",
+  "eids": [
+   23121
+  ],
+  "severity": "high",
+  "score": 1.0,
+  "suppressed": false,
+  "context": {}
+ }
+]

@@ -1,0 +1,3 @@
+mode,timeline_recall,ordering_accuracy,f1,campaign_detection_rate,mean_abs_ts_error_s,recall_ssh_lateral,recall_anti_forensics,recall_cryptomining,recall_credential_exfil,recall_priv_esc
+corrected,1.0,1.0,0.5239643987138091,1.0,0.31362297903499314,1.0,1.0,1.0,1.0,1.0
+naive,0.8689711369670995,0.9575925199623228,0.5203074735771598,0.9800000000000001,7666.919001062316,0.6281890181688307,0.7166666666666666,1.0,1.0,1.0

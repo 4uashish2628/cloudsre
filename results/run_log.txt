@@ -1,0 +1,25 @@
+02:32:21 E1 n=1000 done
+02:32:21 E1 n=5000 done
+02:32:23 E1 n=20000 done
+02:32:28 E1 n=50000 done
+02:32:29 E3 Plain central log done
+02:32:31 E3 Per-entry hash done
+02:32:33 E3 Hash chain done
+02:32:40 E3 Blockchain (PoW) done
+02:32:48 E3 FRSL (proposed) done
+02:32:54 E4/E5 seed 1 done
+02:32:57 E4/E5 seed 2 done
+02:32:59 E4/E5 seed 3 done
+02:33:02 E4/E5 seed 4 done
+02:33:04 E4/E5 seed 5 done
+02:33:07 E6 seed 1 done
+02:33:09 E6 seed 2 done
+02:33:11 E6 seed 3 done
+02:33:13 E6 seed 4 done
+02:33:14 E6 seed 5 done
+02:33:15 E8 2x24h records=19525 total=0.4s
+02:33:16 E8 4x24h records=36867 total=0.7s
+02:33:17 E8 8x24h records=71023 total=1.3s
+02:33:20 E8 8x48h records=133397 total=2.6s
+02:33:27 E8 16x48h records=276024 total=5.3s
+02:33:27 all experiments done in 65.9 s
