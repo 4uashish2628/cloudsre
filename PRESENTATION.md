@@ -1,5 +1,6 @@
 # Presentation Plan: CloudForensiX
 
+**Slides:** [presentation/CloudForensiX_presentation.pptx](presentation/CloudForensiX_presentation.pptx) (speaker notes hold each person's script; PDF copy alongside)
 **Total time:** about 15 minutes of talk, then 3–5 minutes of Q&A
 **Order:** Aditya → Atithi → Ashish → Chiranthan
 **Rule of thumb:** one idea per slide, a figure on most slides, and no paragraphs on slides; the speaker says the detail.
