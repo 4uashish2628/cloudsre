@@ -1,7 +1,7 @@
 # CloudForensiX — Forensic-Ready Monitoring & Incident Response for Multi-Tenant Clouds
 
 **Subject:** Cloud and SRE Security · **Track:** Monitoring and Incident Response
-**Group:** Aditya Sharma, Atithi Jaiman, Ashish Singh
+**Group:** Aditya Sharma, Atithi Jaiman, Ashish Singh, Chiranthan
 **Base paper:** B. Manral, G. Somani, K.-K. R. Choo, M. Conti, M. S. Gaur,
 *"A Systematic Survey on Cloud Forensics Challenges, Solutions, and Future Directions"*,
 ACM Computing Surveys 52(6), Art. 124, 2019. doi:[10.1145/3361216](https://doi.org/10.1145/3361216)
