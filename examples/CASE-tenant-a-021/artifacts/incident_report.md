@@ -1,4 +1,4 @@
-# Incident report CASE-tenant-a-020
+# Incident report CASE-tenant-a-021
 
 * Tenant: `tenant-a`
 * Alert window (UTC): 2026-01-05 16:13:54 - 2026-01-05 16:15:26

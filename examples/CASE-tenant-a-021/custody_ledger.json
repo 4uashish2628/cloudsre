@@ -1,0 +1,92 @@
+[
+  {
+    "seq": 0,
+    "ts": 1794388319.882734,
+    "actor": "forensic-pipeline",
+    "action": "open_case",
+    "note": "tenant=tenant-a alerts=1",
+    "prev": "0000000000000000000000000000000000000000000000000000000000000000",
+    "mac": "e1e6080d239c6ea14281b0245f86be1cfe069f1ca76155da12122a0cfa90c198"
+  },
+  {
+    "seq": 1,
+    "ts": 1794388319.8835049,
+    "actor": "forensic-pipeline",
+    "action": "acquire",
+    "note": "timeline.jsonl sha256=e8b3b70c44ee11a716b41f87e5b3fa7d57e4e3d76a1f1a701dc7e14f15860df1 bytes=36744",
+    "prev": "e2ba398c687ce68d3cb83b837d2da95cfd7006883eabd9bf3713342788a64c4d",
+    "mac": "2aa034f299125c353c0ab3202f969b6777df4f170fb84e4e8eb4045e32bdcf15"
+  },
+  {
+    "seq": 2,
+    "ts": 1794388319.8835142,
+    "actor": "forensic-pipeline",
+    "action": "acquire",
+    "note": "raw_isolated.log sha256=af506a83fe03a124eaff1899f9083e1ece62b4428baba647515c106d2bab03a0 bytes=9630",
+    "prev": "293c263f1c557d87acf431aaeb40efc0bc90af8650c093977a70fc13d5a0a76c",
+    "mac": "ec02d4da69ddac4c555134a4f297d355b9f256f59739fc62642eb25da0fb3cbf"
+  },
+  {
+    "seq": 3,
+    "ts": 1794388319.883523,
+    "actor": "forensic-pipeline",
+    "action": "acquire",
+    "note": "alerts.json sha256=5bb51fcf3d3194b8331d24c6087124608deb8de58525926501b1b2e0d6b004fd bytes=643",
+    "prev": "465fdf6b69e5ee15a7c3474610643993352c3fc86cc087172864ccd07f17cc99",
+    "mac": "6e0fc49644b36819b86df992140dc1e7974a8e6d55b0b9f10fdf4b34c0aed008"
+  },
+  {
+    "seq": 4,
+    "ts": 1794388319.883532,
+    "actor": "forensic-pipeline",
+    "action": "acquire",
+    "note": "acquisition_plan.json sha256=cb6e8e84435f269d3bb26acca19b3f6a844f2efd5c5a79c6dce63f8f292fa4f0 bytes=599",
+    "prev": "175856498c047eb799e0a9f03f981847646669e0ed4b026f378a8276102793ac",
+    "mac": "d69e1b2e0478e3e81a6ff23b42c64853b23b5553979a36e454481e6751e386f4"
+  },
+  {
+    "seq": 5,
+    "ts": 1794388319.883551,
+    "actor": "forensic-pipeline",
+    "action": "acquire",
+    "note": "integrity_proofs.json sha256=a30020639abf953e180f6c41d80b38d6392375cbc635f7fa9d3c31afc86d6739 bytes=3802",
+    "prev": "f764b0a39cafadff858c1dbebe593d5b67c42bd3c9c02715b95c3b18e2b2f1d6",
+    "mac": "84310151b7bbbb7c5bed1c8e3c78101055dbb6f6cfdda77bb5bcb05afec3c8cc"
+  },
+  {
+    "seq": 6,
+    "ts": 1794388319.883874,
+    "actor": "forensic-pipeline",
+    "action": "acquire",
+    "note": "incident_report.md sha256=0a66a740aa0e39535498fe1e45049a33b7fe12a747d760ab538c56c5d7e92e60 bytes=5098",
+    "prev": "ba10ad155ace92c555c836ee438d81984c29d742f512218c10f3821c02843899",
+    "mac": "d87aee2c6695582b37827584ec3dba96051e8055e1298ed18be8bdb1a471d493"
+  },
+  {
+    "seq": 7,
+    "ts": 1794388319.883919,
+    "actor": "forensic-pipeline",
+    "action": "seal",
+    "note": "merkle_root=e182e71050c0507fc480ec2e16ecc92aba89440273b9a25a299be7ae0b2166d7",
+    "prev": "20a173ea2175dc33997cf768c9a8e0d86acdac839fafe1e15239347eae43599c",
+    "mac": "9f903d50f1abb693cf5f197ce7ede1dae65849efade51aaff1b48ddcf85e9746"
+  },
+  {
+    "seq": 8,
+    "ts": 1794388319.883923,
+    "actor": "forensic-pipeline",
+    "action": "transfer",
+    "note": "to=investigator",
+    "prev": "559c226bedf609b3903931d5ef0d45789598393d43d3780b6f90bf7d9d7f341d",
+    "mac": "a8ca8c8cb3b6307fac9f5229c7da86d01bea79fe68483a22fd9a8827afe36cd6"
+  },
+  {
+    "seq": 9,
+    "ts": 1794388319.884017,
+    "actor": "investigator",
+    "action": "verify",
+    "note": "ok",
+    "prev": "304537bcc03790187e5f477b1b37e4894c9cde35c6384ba476f78ae052ffe6dd",
+    "mac": "4d184d058498716f33ecf3c2e37ac637397ce8b97750dcf9639dbf27cdd403f1"
+  }
+]

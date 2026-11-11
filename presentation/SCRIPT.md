@@ -210,13 +210,15 @@ Now let me show it running.
 
 First I run our tests. *[Run `.venv/bin/python -m pytest -q`]* All **28 tests** pass.
 
-Now I run a full investigation. *[Run `.venv/bin/python -m cloudforensix.cli investigate --seed 7 --out cases`]* This simulates a full day in a four-customer cloud and runs the whole pipeline in under a second. We get 116 alerts grouped into 24 incidents, **all 20 attacks found**, and the log store verifies as untampered.
+Now I run a full investigation. *[Run `.venv/bin/python -m cloudforensix.cli investigate --seed 7 --out cases`]* This simulates a full day in a four-customer cloud and runs the whole pipeline in under a second. We get 116 alerts grouped into 26 incidents, **all 20 attacks found**, and the log store verifies as untampered.
 
-*[Open `cases/CASE-tenant-a-020/artifacts/incident_report.md`]*
+*[Run `.venv/bin/python experiments/show_timeline.py cases/CASE-tenant-a-021`]*
 
-This is the evidence report for an SSH attack.
+This is the rebuilt timeline of one SSH attack. *[Point down the list]* First, **42 failed logins** from the attacker's IP. Then a **successful login** as the user "deploy". Then the attacker downloads a script and runs it **as root**. Then they **scan four other machines** on port 22, log in to two of them, and run the same script there. All of that was rebuilt from just **one** alert.
 
-*[Scroll to the timeline]* Here is the rebuilt timeline: many failed SSH logins, then a successful login, then the attacker downloads a script, then moves to other machines.
+*[Open `cases/CASE-tenant-a-021/artifacts/incident_report.md`]*
+
+This is the evidence report for the same attack.
 
 *[Point to the Integrity line]* 50 out of 50 records verified against the signed proofs.
 

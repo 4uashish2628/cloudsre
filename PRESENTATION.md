@@ -60,7 +60,7 @@ cd cloudsre
 .venv/bin/python -m cloudforensix.cli investigate --seed 7 --out cases
 ```
 
-Then open `cases/CASE-tenant-a-020/artifacts/incident_report.md`, or the copy in `examples/`, and point at:
+Then run `.venv/bin/python experiments/show_timeline.py cases/CASE-tenant-a-021` to show the attack step by step, open `cases/CASE-tenant-a-021/artifacts/incident_report.md` (a copy is in `examples/`), and point at:
 - the reconstructed timeline (failed SSH logins → success → `wget` dropper → lateral movement);
 - "Integrity: 50/50 entries verified";
 - "residual foreign identifiers = 0";

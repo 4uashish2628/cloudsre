@@ -1,0 +1,12 @@
+{
+  "case_id": "CASE-tenant-a-017",
+  "artifacts": {
+    "acquisition_plan.json": "44fee1f2fd0a7e37863bf4cd94380b43267ff51401cf36266c034a632d2efc8c",
+    "alerts.json": "55ab64f6186f56d2e166b0408be167b4785107edd75cdc311d02fc91d14260fd",
+    "incident_report.md": "f9cfe918870e217c6de31c1555b395aa3538f4aed93498e3955dfbb1c0b95084",
+    "integrity_proofs.json": "33b2e9a315266dce39f913f3db3ab40486ae77f573798360491b092293c30201",
+    "raw_isolated.log": "c39b5af6b91d2fbf9a04b82ddbd7f54bfcff40d21a217ebde6a05179e9f529ac",
+    "timeline.jsonl": "897857790ac6a57659b7d4672a8021eaf95631682d994be027c4316d2aaffdbb"
+  },
+  "merkle_root": "9675e98750f478d148f531b1084886ce682c6d440167fe8b9e88defdf6db0f2c"
+}

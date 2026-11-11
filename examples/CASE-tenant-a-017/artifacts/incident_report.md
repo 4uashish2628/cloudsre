@@ -1,11 +1,11 @@
-# Incident report CASE-tenant-a-016
+# Incident report CASE-tenant-a-017
 
 * Tenant: `tenant-a`
 * Alert window (UTC): 2026-01-05 14:44:40 - 2026-01-05 14:48:13
-* Reconstructed window (UTC): 2026-01-05 14:44:30 - 2026-01-05 18:18:50
+* Reconstructed window (UTC): 2026-01-05 14:44:30 - 2026-01-05 17:37:00
 * Alerts: 10 (R4_instance_burstx3, R4_mining_pool_trafficx7)
-* Reconstructed timeline: 362 events from 4 sources
-* Key entities: host:vm-a-x17, host:vm-a-x18, host:vm-a-x19, host:vm-a-x20, host:vm-a-x21, host:vm-a-x22, host:vm-a-x23, ip:192.0.2.10, ip:45.9.148.21, ip:77.155.55.131, user:tenant-a/dave.a, user:tenant-a/erin.a
+* Reconstructed timeline: 296 events from 4 sources
+* Key entities: host:vm-a-x17, host:vm-a-x18, host:vm-a-x19, host:vm-a-x20, host:vm-a-x21, host:vm-a-x22, host:vm-a-x23, ip:45.9.148.21, ip:77.155.55.131, user:tenant-a/dave.a
 * CSP Dependency Index: 0.50
 * Evidence isolation: {'dropped_foreign': 0, 'pseudonymised_records': 0, 'pseudonyms': 0}, residual foreign identifiers = 0
 * Integrity: 50/50 sampled entries verified by Merkle proof against anchored PPL
