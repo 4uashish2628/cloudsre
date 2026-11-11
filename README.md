@@ -125,7 +125,16 @@ Hidden ground truth (true time, label, campaign, kill-chain step) is used **only
 
 Limitations (synthetic data, rule thresholds, MAC vs signatures, modelled acquisition latencies) are discussed in the paper, Sec. VII.
 
-## 6. Citation
+## 6. Contribution of group members (equal split)
+
+| Member | Technical contribution | Code | Experiments | Paper sections |
+|---|---|---|---|---|
+| **Aditya Sharma** | Survey analysis, requirements R1–R6, log aggregation and time normalisation, forensic metric suite, test suite | `normalizer.py`, `metrics.py`, `tests/` | E5 time-normalisation ablation | I–III, IV-B, IV-G |
+| **Atithi Jaiman** | FRSL tamper-evident secure log, chain of custody and evidence packaging | `seclog.py`, `custody.py` | E1, E2, E3 | IV-A, IV-F, VI (E1–E3) |
+| **Ashish Singh** | Multi-tenant cloud simulator and attack campaigns, hybrid detector, CLI and live demo | `simulator.py`, `detector.py`, `cli.py` | E4 | IV-C, V, VI (E4) |
+| **Chiranthan** | Entity-graph correlation and reconstruction, evidence isolation, Table-14 artifact map, pipeline integration | `correlation.py`, `isolation.py`, `artifacts.py`, `pipeline.py` | E5 correlation, E6, E7, E8 | IV-D, IV-E, VI (E5–E8), VII–VIII |
+
+## 7. Citation
 
 ```bibtex
 @article{manral2019survey,
