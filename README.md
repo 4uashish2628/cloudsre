@@ -1,7 +1,8 @@
 # CloudForensiX — Forensic-Ready Monitoring & Incident Response for Multi-Tenant Clouds
 
 **Subject:** Cloud and SRE Security · **Track:** Monitoring and Incident Response
-**Group:** Aditya Sharma, Atithi Jaiman, Ashish Singh, Chiranthan
+**Group:** Aditya Sharma, Atithi Jaiman, Ashish Singh, Chiranthan T S
+**Institute:** IIIT Dharwad
 **Base paper:** B. Manral, G. Somani, K.-K. R. Choo, M. Conti, M. S. Gaur,
 *"A Systematic Survey on Cloud Forensics Challenges, Solutions, and Future Directions"*,
 ACM Computing Surveys 52(6), Art. 124, 2019. doi:[10.1145/3361216](https://doi.org/10.1145/3361216)
@@ -132,7 +133,7 @@ Limitations (synthetic data, rule thresholds, MAC vs signatures, modelled acquis
 | **Aditya Sharma** | Survey analysis, requirements R1–R6, log aggregation and time normalisation, forensic metric suite, test suite | `normalizer.py`, `metrics.py`, `tests/` | E5 time-normalisation ablation | I–III, IV-B, IV-G |
 | **Atithi Jaiman** | FRSL tamper-evident secure log, chain of custody and evidence packaging | `seclog.py`, `custody.py` | E1, E2, E3 | IV-A, IV-F, VI (E1–E3) |
 | **Ashish Singh** | Multi-tenant cloud simulator and attack campaigns, hybrid detector, CLI and live demo | `simulator.py`, `detector.py`, `cli.py` | E4 | IV-C, V, VI (E4) |
-| **Chiranthan** | Entity-graph correlation and reconstruction, evidence isolation, Table-14 artifact map, pipeline integration | `correlation.py`, `isolation.py`, `artifacts.py`, `pipeline.py` | E5 correlation, E6, E7, E8 | IV-D, IV-E, VI (E5–E8), VII–VIII |
+| **Chiranthan T S** | Entity-graph correlation and reconstruction, evidence isolation, Table-14 artifact map, pipeline integration | `correlation.py`, `isolation.py`, `artifacts.py`, `pipeline.py` | E5 correlation, E6, E7, E8 | IV-D, IV-E, VI (E5–E8), VII–VIII |
 
 ## 7. Citation
 

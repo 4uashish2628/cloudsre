@@ -70,7 +70,7 @@ Then run `.venv/bin/python experiments/show_timeline.py cases/CASE-tenant-a-021`
 
 ---
 
-## 4. Chiranthan: Privacy, scale, conclusion and Q&A (about 3 min, slides 13–16)
+## 4. Chiranthan T S: Privacy, scale, conclusion and Q&A (about 3 min, slides 13–16)
 
 | Slide | Content | Source |
 |---|---|---|

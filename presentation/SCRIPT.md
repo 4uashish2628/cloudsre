@@ -232,7 +232,7 @@ This is the evidence report for the same attack.
 
 ---
 
-## Part 4 — Chiranthan (slides 13–16, about 3 minutes, then Q&A)
+## Part 4 — Chiranthan T S (slides 13–16, about 3 minutes, then Q&A)
 
 ### Slide 13 — Evidence isolation (45 s)
 
