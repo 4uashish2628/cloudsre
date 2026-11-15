@@ -1,0 +1,253 @@
+\documentclass[10pt,a4paper]{article}
+\usepackage[margin=1.8cm]{geometry}
+\usepackage[T1]{fontenc}
+\usepackage{lmodern}
+\usepackage{booktabs,tabularx,array}
+\usepackage{xcolor}
+\usepackage{enumitem}
+\usepackage{fancyvrb}
+\usepackage[hidelinks]{hyperref}
+\usepackage{titlesec}
+\usepackage{fancyhdr}
+\usepackage{needspace}
+
+\definecolor{ink}{HTML}{17212B}
+\definecolor{teal}{HTML}{2A9D8F}
+\definecolor{amber}{HTML}{E8A33D}
+\definecolor{rust}{HTML}{C8553D}
+\definecolor{muted}{HTML}{5A6672}
+\definecolor{codebg}{HTML}{EEF2F5}
+
+\titleformat{\section}{\large\bfseries\color{ink}}{}{0pt}{}
+\titleformat{\subsection}{\normalsize\bfseries\color{teal}}{}{0pt}{}
+\titlespacing*{\section}{0pt}{14pt}{6pt}
+\titlespacing*{\subsection}{0pt}{10pt}{4pt}
+\setlength{\parindent}{0pt}
+\setlength{\parskip}{4pt}
+\renewcommand{\arraystretch}{1.25}
+\newcolumntype{L}{>{\raggedright\arraybackslash}X}
+\newcolumntype{P}[1]{>{\raggedright\arraybackslash}p{#1}}
+
+\pagestyle{fancy}
+\fancyhf{}
+\lhead{\small\color{muted} CloudForensiX --- where every number comes from}
+\rhead{\small\color{muted} IIIT Dharwad}
+\cfoot{\small\color{muted}\thepage}
+\renewcommand{\headrulewidth}{0.3pt}
+
+\DefineVerbatimEnvironment{cmd}{Verbatim}{fontsize=\small,frame=single,framesep=2mm,rulecolor=\color{codebg},formatcom=\color{ink}}
+
+\newcommand{\livebox}[1]{\par\smallskip\textbf{\color{rust}Show it live:} #1\par}
+
+\begin{document}
+
+{\LARGE\bfseries\color{ink} Where every number in the presentation comes from}\par
+\smallskip
+{\large\color{muted} and what to run if the professor asks to see it}\par
+\medskip
+\textbf{Project:} CloudForensiX --- Cloud and SRE Security, Monitoring and Incident Response\\
+\textbf{Group:} Aditya Sharma, Atithi Jaiman, Ashish Singh, Chiranthan T S --- IIIT Dharwad\\
+\textbf{Code:} \url{https://github.com/4uashish2628/cloudsre}
+
+\section{1. The three ways to prove a number}
+
+Run every command from the \texttt{cloudsre} folder.
+
+\begin{tabularx}{\textwidth}{@{}P{3.6cm}LP{2.2cm}@{}}
+\toprule
+\textbf{Level} & \textbf{What it does} & \textbf{Time} \\
+\midrule
+\textbf{A. Instant lookup} & Prints every number on the slides, what it means and which result it comes from. Reads the saved results file \texttt{results/summary.json}. & under 1 s \\
+\textbf{B. Recompute one slide} & Re-runs that slide's experiment right now, with exactly the same code as the paper, and prints fresh numbers. Writes to a temporary folder, so saved results are not changed. & 10--25 s \\
+\textbf{C. Full reproduction} & Re-runs all 8 experiments, regenerates every results file and every figure in the paper. & about 1 min \\
+\bottomrule
+\end{tabularx}
+
+\begin{cmd}
+A:  .venv/bin/python experiments/show_numbers.py            (all slides)
+    .venv/bin/python experiments/show_numbers.py 10         (one slide)
+B:  .venv/bin/python experiments/show_numbers.py 10 --live
+C:  .venv/bin/python experiments/run_all.py
+\end{cmd}
+
+\textbf{Important to say if numbers differ slightly.} All \emph{accuracy} numbers (detection rates, false alerts, recall, leakage, tamper detection) are produced by seeded experiments and come out \textbf{exactly the same} every run. Only \emph{speed} numbers (entries per second, microseconds, seconds) vary by roughly 10--20\%, because they depend on what else the laptop is doing. In a test run, ``7.2$\times$'' came out as 7.4$\times$ and ``8\,$\mu$s'' as 6\,$\mu$s. The conclusions do not change.
+
+\section{2. The experiments behind the numbers}
+
+\begin{tabularx}{\textwidth}{@{}P{0.9cm}LP{5.4cm}P{1.3cm}@{}}
+\toprule
+\textbf{ID} & \textbf{What is measured} & \textbf{Saved file (in \texttt{results/})} & \textbf{Slides} \\
+\midrule
+E1 & Logging speed and storage overhead of 5 log schemes (plain, per-entry hash, hash chain, blockchain, FRSL) & \texttt{e1\_logging\_overhead.csv} & 8 \\
+E2 & Time to audit the whole log vs.\ verify one record; proof size; Bloom filter error & \texttt{e2\_verification.csv} & 7, 8 \\
+E3 & Tamper detection: 5 attacks $\times$ 2 insider modes $\times$ 100 trials; unsealed-window test & \texttt{e3\_tamper\_detection.csv}, \texttt{e3\_unsealed\_window.csv} & 8 \\
+E4 & Detection: rules vs.\ Isolation Forest vs.\ hybrid, 5 seeds & \texttt{e4\_detection*.csv} & 10 \\
+E5 & Correlation and timeline rebuilding; time-zone ablation & \texttt{e5\_*.csv} & 11 \\
+E6 & Evidence isolation (privacy leakage) & \texttt{e6\_isolation.csv} & 13 \\
+E7 & CSP dependency and evidence waiting time (model) & \texttt{e7\_acquisition.csv} & 14 \\
+E8 & End-to-end speed at 5 data sizes & \texttt{e8\_scalability.csv} & 14 \\
+\bottomrule
+\end{tabularx}
+
+All experiments are in \texttt{experiments/run\_all.py}, one function per experiment (\texttt{e1\_e2}, \texttt{e3}, \texttt{e4\_e5}, \texttt{e6}, \texttt{e7}, \texttt{e8}). The summary of all of them is \texttt{results/summary.json}.
+
+\section{3. Slide by slide}
+
+\subsection{Slide 3 --- Base paper (Aditya)}
+\begin{tabularx}{\textwidth}{@{}P{3.3cm}LP{5.2cm}@{}}
+\toprule
+\textbf{Number on slide} & \textbf{Meaning} & \textbf{Comes from} \\
+\midrule
+80 papers (2009--2019) & Papers the survey reviewed and classified & Base paper, Sec.~2.1 and Table~2 \\
+Table 14 & Which forensic artifacts each party holds & Base paper, Sec.~8.1, Table~14 \\
+5 guidelines & The survey's investigation guidelines & Base paper, Sec.~8.2.1--8.2.5 \\
+\bottomrule
+\end{tabularx}
+\livebox{nothing to run --- open the base paper PDF at those sections.}
+
+\subsection{Slide 4 --- Requirements table (Aditya)}
+\begin{tabularx}{\textwidth}{@{}P{3.3cm}LP{5.2cm}@{}}
+\toprule
+\textbf{Number on slide} & \textbf{Meaning} & \textbf{Comes from} \\
+\midrule
+R1--R6 table & Which of our 6 requirements each surveyed system covers & Our analysis of the base paper's comparison tables (Tables~3--8); identical to Table~I of our paper \\
+\bottomrule
+\end{tabularx}
+\livebox{nothing to run --- show Table~I in our paper.}
+
+\subsection{Slide 7 --- FRSL design (Atithi)}
+\begin{tabularx}{\textwidth}{@{}P{3.3cm}LP{5.2cm}@{}}
+\toprule
+\textbf{Number on slide} & \textbf{Meaning} & \textbf{Comes from} \\
+\midrule
+``10 hashes'' & Size of the proof for one record. Each batch has 1{,}024 records, and $\log_2 1024 = 10$ & E2, \texttt{proof\_hashes} \\
+\bottomrule
+\end{tabularx}
+\livebox{\texttt{show\_numbers.py 7 -{}-live}}
+
+\subsection{Slide 8 --- FRSL results (Atithi)}
+\begin{tabularx}{\textwidth}{@{}P{3.3cm}LP{5.2cm}@{}}
+\toprule
+\textbf{Number on slide} & \textbf{Meaning} & \textbf{Comes from} \\
+\midrule
+100\% & FRSL caught every tampering attempt: 5 attacks (modify, delete, insert, reorder, truncate), with and without the insider recomputing hashes, 100 trials each & E3 (the heatmap on the slide is \texttt{e3\_tamper\_heatmap.png} in \texttt{paper/figures/}) \\
+7.2$\times$ & FRSL ingests 320{,}703 entries/s, blockchain 44{,}247; $320{,}703 / 44{,}247 = 7.2$ & E1, at 50{,}000 log entries \\
+8\,$\mu$s & Average time to verify one record with its Merkle proof (200 random records, 50k-entry log) & E2, \texttt{single\_verify\_ms} \\
+5{,}300$\times$ & Full audit of 50k entries takes 43.2\,ms; one record 8.1\,$\mu$s; $43.2 / 0.0081 \approx 5{,}300$ & E2, \texttt{full\_verify\_ms} / \texttt{single\_verify\_ms} \\
+Chart: 1{,}919k / 321k / 44k & Entries per second: hash chain / FRSL / blockchain & E1 \\
+Caveat & If the insider deletes the newest records \emph{before} they are sealed, it is caught 100\% (batch 64), 51\% (batch 1{,}024), 0\% (nothing sealed yet) & E3 unsealed-window test \\
+\bottomrule
+\end{tabularx}
+\livebox{\texttt{show\_numbers.py 8 -{}-live} (about 25 s). Speed numbers will be close but not identical; the 100\% and the caveat percentages are identical.}
+
+\subsection{Slide 9 --- Test setup (Ashish)}
+\begin{tabularx}{\textwidth}{@{}P{3.3cm}LP{5.2cm}@{}}
+\toprule
+\textbf{Number on slide} & \textbf{Meaning} & \textbf{Comes from} \\
+\midrule
+20 & Attack campaigns per simulated day: 4 of each of 5 types & \texttt{cloudforensix/simulator.py}, \texttt{campaigns\_per\_type=4} \\
+5 & Random seeds (1--5); every result is their average & \texttt{run\_all.py}, \texttt{seeds = [1..5]} \\
+37k & Raw log records per run: 37{,}323 / 37{,}154 / 36{,}869 / 36{,}500 / 36{,}180 for seeds 1--5 & Simulator output \\
+\bottomrule
+\end{tabularx}
+\livebox{\texttt{show\_numbers.py 9} (recounts by running the simulator, about 1 s).}
+
+\subsection{Slide 10 --- Hybrid detection (Ashish)}
+\begin{tabularx}{\textwidth}{@{}P{3.3cm}LP{5.2cm}@{}}
+\toprule
+\textbf{Number on slide} & \textbf{Meaning} & \textbf{Comes from} \\
+\midrule
+44.2 / 78.8 / 14.6 & False alerts per simulated day for rules / Isolation Forest / hybrid (the bar chart), averaged over 5 seeds & E4, \texttt{false\_alerts} \\
+67\% fewer & $1 - 14.6/44.2 = 0.67$ & Computed from the line above \\
+100\% & Share of the 20 campaigns that got at least one alert (hybrid) & E4, \texttt{campaign\_detection\_rate} \\
+26\% & Same for Isolation Forest alone & E4 \\
+83 s & Mean time from an attack's first action to its first alert & E4, \texttt{mttd\_s} \\
+0.49 $\rightarrow$ 0.78 & Precision: share of flagged log lines that are really part of an attack, rules $\rightarrow$ hybrid & E4, \texttt{precision} \\
+\bottomrule
+\end{tabularx}
+\livebox{\texttt{show\_numbers.py 10 -{}-live} (about 12 s). All values come out identical.}
+
+\subsection{Slide 11 --- Timeline rebuilding (Ashish)}
+\begin{tabularx}{\textwidth}{@{}P{3.3cm}LP{5.2cm}@{}}
+\toprule
+\textbf{Number on slide} & \textbf{Meaning} & \textbf{Comes from} \\
+\midrule
+34\% $\rightarrow$ 100\% & Share of each attack's events covered by the alerts alone, then after entity-graph reconstruction & E5, \texttt{alert\_only\_recall}, \texttt{timeline\_recall} \\
+ARI 0.9996 & How well alerts are grouped into the right attacks (1.0 = perfect) & E5, \texttt{ari} \\
+1.19 vs 1.39--1.85 & Incidents per attack: ours vs.\ Leader-Follower static/adaptive (1.0 = each attack in exactly one incident) & E5, \texttt{fragmentation} \\
+63\% / 72\% / 87\% & Timeline recall \emph{without} time-zone correction: SSH lateral / anti-forensics / all (red bars) & E5 ablation, mode \texttt{naive} \\
+100\% / 100\% / 100\% & Same \emph{with} correction (green bars) & E5 ablation, mode \texttt{corrected} \\
+\bottomrule
+\end{tabularx}
+\livebox{\texttt{show\_numbers.py 11 -{}-live} (about 12 s). All values come out identical.}
+
+\needspace{16\baselineskip}
+\subsection{Slide 12 --- Live demo (Ashish)}
+\begin{tabularx}{\textwidth}{@{}P{3.3cm}LP{5.2cm}@{}}
+\toprule
+\textbf{Number on slide} & \textbf{Meaning} & \textbf{Comes from} \\
+\midrule
+28 passed & All unit tests pass & \texttt{tests/test\_cloudforensix.py} \\
+116 alerts, 26 incidents, 20/20 & One full investigation of a simulated day (seed 7) & CLI output \\
+11 steps from 1 alert & The rebuilt SSH attack in case \texttt{CASE-tenant-a-021} & \texttt{show\_timeline.py} \\
+50/50, 0 foreign ids & Integrity proofs verified; no other customer's data & The case's \texttt{incident\_report.md} \\
+\bottomrule
+\end{tabularx}
+\begin{cmd}
+.venv/bin/python -m pytest -q
+.venv/bin/python -m cloudforensix.cli investigate --seed 7 --out cases
+.venv/bin/python experiments/show_timeline.py cases/CASE-tenant-a-021
+open cases/CASE-tenant-a-021/artifacts/incident_report.md
+\end{cmd}
+
+\subsection{Slide 13 --- Evidence isolation (Chiranthan T S)}
+\begin{tabularx}{\textwidth}{@{}P{3.3cm}LP{5.2cm}@{}}
+\toprule
+\textbf{Number on slide} & \textbf{Meaning} & \textbf{Comes from} \\
+\midrule
+51 $\rightarrow$ 0 & Distinct identifiers of \emph{other} customers in the evidence: naive dump of the time window $\rightarrow$ our isolation & E6, \texttt{naive\_leak}, \texttt{isolated\_leak} \\
+119 incidents & Attack incidents the average is taken over (5 seeds) & E6 \\
+100\% & Share of the attack's own records kept after isolation & E6, \texttt{evidence\_retained} \\
+7{,}150 $\rightarrow$ 2{,}030 & Records per evidence set, naive $\rightarrow$ isolated (exact: 7{,}152 $\rightarrow$ 2{,}029) & E6 \\
+\bottomrule
+\end{tabularx}
+\livebox{\texttt{show\_numbers.py 13 -{}-live} (about 10 s). All values come out identical.}
+
+\subsection{Slide 14 --- Provider dependency and scalability (Chiranthan T S)}
+\begin{tabularx}{\textwidth}{@{}P{3.3cm}LP{5.2cm}@{}}
+\toprule
+\textbf{Number on slide} & \textbf{Meaning} & \textbf{Comes from} \\
+\midrule
+$\approx$80 / 92 / 5 / 8 / 8 h & Median wait for evidence today (legal request to the provider) for data theft / cryptomining / privilege escalation / SSH lateral / anti-forensics & E7 --- a \textbf{model} with assumed delays (owner $\approx$4\,h, provider $\approx$72\,h), 10{,}000 random samples, seed 7 \\
+Chart: 0.4 $\ldots$ 5.3 s & Full pipeline time for 20k / 37k / 71k / 133k / 276k log records & E8 \\
+$\approx$52k records/s & Average throughput over those 5 sizes & E8 \\
+\bottomrule
+\end{tabularx}
+\livebox{\texttt{show\_numbers.py 14 -{}-live} (about 11 s). The waiting times are identical; speed varies slightly. Say clearly that the waiting times are \emph{modelled}, not measured.}
+
+\subsection{Slide 15 --- Contributions (Chiranthan T S)}
+\begin{tabularx}{\textwidth}{@{}P{3.3cm}LP{5.2cm}@{}}
+\toprule
+\textbf{Number on slide} & \textbf{Meaning} & \textbf{Comes from} \\
+\midrule
+$\sim$2{,}300 lines & Source lines of the framework (exact: 2{,}260) & \texttt{cloudforensix/*.py} \\
+28 tests & Unit and integration tests & \texttt{tests/} \\
+8 experiments & E1--E8 & \texttt{experiments/run\_all.py} \\
+\bottomrule
+\end{tabularx}
+\begin{cmd}
+wc -l cloudforensix/*.py
+.venv/bin/python -m pytest -q
+\end{cmd}
+
+\section{4. If the professor asks \ldots}
+
+\begin{description}[leftmargin=0pt,itemsep=4pt]
+\item[``Show me this number is real.''] Run level A for that slide and point at the \emph{source} line. If they want more, run level B (\texttt{-{}-live}) and show the same value being recomputed.
+\item[``Is this data made up?''] It is generated by our seeded simulator (\texttt{cloudforensix/simulator.py}), because real cloud providers cannot be instrumented; the base survey says the same. Show \texttt{python -m cloudforensix.cli simulate -{}-out data}, which writes the raw logs and the hidden ground truth.
+\item[``Why is the number slightly different now?''] Only speed numbers vary with machine load; accuracy numbers are seeded and identical every run.
+\item[``Where is the code for X?''] Detection: \texttt{detector.py}. Secure log: \texttt{seclog.py}. Correlation: \texttt{correlation.py}. Time correction: \texttt{normalizer.py}. Isolation: \texttt{isolation.py}. Metrics: \texttt{metrics.py}.
+\item[``Reproduce everything.''] \texttt{.venv/bin/python experiments/run\_all.py} (about 1 minute) regenerates all results and all paper figures.
+\end{description}
+
+\end{document}
