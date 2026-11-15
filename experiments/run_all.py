@@ -442,7 +442,7 @@ def e7():
     ax.set_xscale("log")
     ax.set_xlabel("evidence acquisition time (hours, log)")
     ax.set_ylabel("CDF over incidents")
-    ax.legend(fontsize=6.5, loc="lower right")
+    ax.legend(fontsize=6.5, loc="upper center", bbox_to_anchor=(0.5, -0.28), ncol=2, frameon=False)
     save(fig, "e7_acquisition_cdf")
 
 

@@ -162,7 +162,7 @@ Prototype and evaluation reported & \checkmark & $\circ$ & \checkmark & -- & \ch
 \node[font=\scriptsize, ink2, above=0.5mm of frsl] {collection \& preservation};
 \node[font=\scriptsize, ink2, above=0.5mm of det] {identification};
 \node[font=\scriptsize, ink2, above=0.5mm of cor] {examination \& analysis};
-\node[font=\scriptsize, ink2, below=0.5mm of pkg] {presentation};
+\node[font=\scriptsize, ink2, below left=0.5mm and -6mm of pkg.south east, anchor=north east] {presentation};
 \end{tikzpicture}
 \caption{Architecture of \ours{}. Proposed components are outlined in blue. Stage labels follow the five-stage investigation process used by the survey (its Fig.~1).}
 \label{fig:arch}
@@ -256,7 +256,7 @@ We report the following metrics:
 %=====================================================================
 \section{Implementation and Experimental Setup}
 \label{sec:setup}
-\ours{} is implemented in Python 3.14 (NumPy, pandas, scikit-learn) as eight modules, together with a CLI and 28 \texttt{pytest} tests. All experiments run with one command (\texttt{make experiments}, about 65\,s) on an Apple M5 laptop with 16\,GB of RAM.
+\ours{} is implemented in Python 3.14 (NumPy, pandas, scikit-learn) as ten modules plus a command-line interface, with 28 \texttt{pytest} tests. All experiments run with one command (\texttt{make experiments}, about one minute) on an Apple M5 laptop with 16\,GB of RAM.
 
 \paragraph*{Why a simulator} The survey notes that researchers cannot instrument commercial CSP back-ends (Sec.~1 of~\cite{manral2019}), and public cloud forensic datasets with ground-truth campaign labels across stakeholders are scarce. We therefore built a deterministic simulator that emits \emph{raw text} in the five formats of Table~\ref{tab:data}, with hidden ground truth (true UTC time, label, campaign and kill-chain step) that is used only for scoring.
 
@@ -274,7 +274,7 @@ Results are averaged over seeds 1--5; $\pm$ values are standard deviations.
 
 \begin{table}[t]
 \centering
-\caption{Simulated artifact sources (seed 1, 4 tenants, 24\,h; 36.9k records).}
+\caption{Simulated artifact sources (seed 1, 4 tenants, 24\,h; 37.3k records).}
 \label{tab:data}
 \footnotesize
 \setlength{\tabcolsep}{3pt}
@@ -440,7 +440,7 @@ We model acquisition latency with explicit, assumed parameters: owner cooperatio
 \end{figure}
 
 \subsection*{E8: Scalability}
-End-to-end pipeline time grows linearly, from 0.41\,s for 19.5k records (2 tenants, 24\,h) to 5.3\,s for 276k records (16 tenants, 48\,h), a steady \textbf{$\approx$52k records/s} (Fig.~\ref{fig:e8}). Detection and normalisation dominate. Correlation takes under 3\% of the time, and packaging an incident with proofs and a custody ledger takes 4--14\,ms. One core therefore covers about 4.5 billion records per day, so a production deployment would need sharding by tenant for larger regions. The pipeline stages are embarrassingly parallel per tenant.
+End-to-end pipeline time grows linearly, from 0.41\,s for 19.5k records (2 tenants, 24\,h) to 5.3\,s for 276k records (16 tenants, 48\,h), a steady 47--54k records/s, \textbf{$\approx$52k records/s} on average (Fig.~\ref{fig:e8}). Detection and normalisation dominate. Correlation takes about 3\% of the time, and packaging an incident with proofs and a custody ledger takes 3--15\,ms. One core therefore covers about 4.5 billion records per day, so a production deployment would need sharding by tenant for larger regions. The pipeline stages are embarrassingly parallel per tenant.
 
 \begin{figure}[t]
 \centering
